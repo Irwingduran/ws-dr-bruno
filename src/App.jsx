@@ -5,6 +5,9 @@ import Navbar from './components/Navbar'
 import Services from './components/Services'
 import About from './components/About'
 import Address from './components/Address'
+import Blog from './components/Blog'
+import Banner from './components/Banner'
+import MyFooter from './components/MyFooter'
 
 function App() {
 
@@ -16,7 +19,9 @@ function App() {
       <Services />
       <About />
       <Address />
-
+      <Blog />
+      <Banner />
+      <MyFooter />
     </>
   )
 }
