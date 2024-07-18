@@ -2,9 +2,9 @@ import React from 'react'
 
 const Blog = () => {
     const article = [
-        {id: 1, title: "Un diagnostico a tiempo logrará una mejor calidad de vida", image: "/src/assets/article1.png"},
-        {id: 2, title: "Un diagnostico a tiempo logrará una mejor calidad de vida", image: "/src/assets/article1.png"},
-        {id: 3, title: "Un diagnostico a tiempo logrará una mejor calidad de vida", image: "/src/assets/article1.png"},
+        {id: 1, title: "Un diagnostico a tiempo logrará una mejor calidad de vida", image: "../../public/img/article1.png"},
+        {id: 2, title: "Un diagnostico a tiempo logrará una mejor calidad de vida", image: "../../public/img/article1.png"},
+        {id: 3, title: "Un diagnostico a tiempo logrará una mejor calidad de vida", image: "../../public/img/article1.png"},
     ];
   return (
     <div className='px-4 lg:px-14 max-w-screen-2x1 mx-auto my-12'>
