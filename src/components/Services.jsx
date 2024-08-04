@@ -3,16 +3,19 @@ import HAngeles from '../../public/img/HAngeles.png';
 
 const Services = () => {
     const services = [
-        {id: 1, title: "Cardiología", description: "lorem text text text text text", img: "./public/img/doctor-icon.png"},
-        {id: 2, title: "Cardiología", description: "lorem text text text text text", img: "../../../public/img/doctor-icon.png"},
-        {id: 3, title: "Cardiología", description: "lorem text text text text text", img: "../public/img/doctor-icon.png"},
+        {id: 1, title: "Cirugía Láser de Próstata", description: "HoLEP = Holmium enucleation of the prostate", img: "./public/img/doctor-icon.png"},
+        {id: 2, title: "Prostatectomia Radical Robótica", img: "../public/img/doctor-icon.png" },
+        {id: 3, title: "Prostata Benigna", description: "Hiperplasia prostática benigna", img: "../../../public/img/doctor-icon.png"},
+        {id: 4, title: "Cirugía Robótica", description: "Robot da Vinci", img: "../public/img/doctor-icon.png"},
+        {id: 5, title: "Próstata Maligna", description: "Cáncer de próstata", img: "../public/img/doctor-icon.png" },
+        
 
     ]
   return (
     <div className='md:px-14 px-4 py-16 max-w-screen-2x1 mx-auto' id='service'>
         <div className='text-center my-8'>
             <h2 className='text-4x1 text-neutralDGrey font-semibold mb-2'> Mis Servicios</h2>
-            <p className='text-neutralDGrey'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, odit?  </p>
+            <p className='text-neutralDGrey'>El Dr. Bruno ofrece cirugía láser de próstata (HoLEP) para tratar la hiperplasia prostática benigna y prostatectomía radical robótica (Robot da Vinci) para el cáncer de próstata, con beneficios de recuperación rápida y mínima invasión. </p>
         { /*  company logo */ }
 
         <div className='my-12 flex flex-wrap justify-between items-center gap-8'>
@@ -23,7 +26,7 @@ const Services = () => {
     { /*  services card  */ }
     <div className='mt-20 md:w-1/2 mx-auto text-center'>
     <h2 className='text-4x1 text-neutralDGrey font-semibold mb-2'> Especialista en:</h2>
-    <p className='text-neutralDGrey'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, odit?  </p>
+    <p className='text-neutralDGrey'>Especialista en enfermedad benigna y maligna de la próstata</p>
     </div>
 
     { /* cards  */}

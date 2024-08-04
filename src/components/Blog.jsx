@@ -2,14 +2,14 @@ import React from 'react'
 
 const Blog = () => {
     const article = [
-        {id: 1, title: "Un diagnostico a tiempo logrará una mejor calidad de vida", image: "img/article1.png"},
+        {id: 1, title: "Bruno Rubí López, cirujano urólogo prodigio en HoLEP", image: "img/article1.png"},
         {id: 2, title: "Un diagnostico a tiempo logrará una mejor calidad de vida", image: "img/article1.png"},
         {id: 3, title: "Un diagnostico a tiempo logrará una mejor calidad de vida", image: "img/article1.png"},
     ];
   return (
     <div className='px-4 lg:px-14 max-w-screen-2x1 mx-auto my-12'>
         <div className='text-center md:w-1/2 mx-auto'>
-        <h2 className='text-4x1 text-neutralDGrey font-semibold mb-4'>Titulo titulo titulo</h2>
+        <h2 className='text-4x1 text-neutralDGrey font-semibold mb-4'>Articulos</h2>
         <p className='text-sm text-neutralGrey mb-8 md:w-3/4 mx-auto'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, voluptatum ullam? Non nesciunt doloribus saepe aliquid commodi cum quibusdam perferendis fugit tenetur quasi, ullam dolorum alias, assumenda praesentium voluptates quos.</p>
         </div>
 
