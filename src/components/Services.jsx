@@ -14,8 +14,17 @@ const Services = () => {
   return (
     <div className='md:px-14 px-4 py-16 max-w-screen-2x1 mx-auto' id='service'>
         <div className='text-center my-8'>
-            <h2 className='text-4x1 text-neutralDGrey font-semibold mb-2'> Mis Servicios</h2>
-            <p className='text-neutralDGrey'>El Dr. Bruno ofrece cirugía láser de próstata (HoLEP) para tratar la hiperplasia prostática benigna y prostatectomía radical robótica (Robot da Vinci) para el cáncer de próstata, con beneficios de recuperación rápida y mínima invasión. </p>
+            <h2 className='text-4x1 text-neutralDGrey font-semibold mb-2'>Servicios</h2>
+            <p className='text-neutralDGrey'>En el ámbito de la urología moderna, pocos nombres 
+                resuenan con tanta fuerza como el del Dr. Bruno, fundador del Centro de Próstata 
+                y Vías Urinarias de Puebla, México. Reconocido por su experiencia y destreza 
+                en la cirugía láser de próstata a nivel internacional.</p>
+                <p>El Dr. Bruno ha adoptado y perfeccionado esta tecnología de vanguardia, 
+                    siendo reconocido en Latinoamérica por la revista Forbes México. 
+                    Su dominio de la tecnología le permite proporcionar a sus pacientes una 
+                    atención de primera clase a un precio digno y con resultados excepcionales. 
+                    Recibe pacientes de todo México y de otros países como Estados Unidos,
+                    Ecuador, Colombia, Brasil, Guatemala, Panamá, entre otros de Centroamérica</p>
         { /*  company logo */ }
 
         <div className='my-12 flex flex-wrap justify-between items-center gap-8'>

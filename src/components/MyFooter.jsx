@@ -8,16 +8,9 @@ const MyFooter = () => {
     <div>
 
     <Footer container>
-      <div className="w-full">
+      <div className="w-full" id='contact'>
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
-          <div>
-            <Footer.Brand
-              href=""
-              src=""
-              alt="Dr Logo"
-              name="Logo"
-            />
-          </div>
+          <h2>Dr. Bruno Rubí López</h2>
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
             <div>
               <Footer.Title title="About" />
