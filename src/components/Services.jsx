@@ -6,11 +6,11 @@ const Services = () => {
   const [selectedService, setSelectedService] = useState(null);
 
   const services = [
-    {id: 1, title: "Cirugía Láser de Próstata", description: "HoLEP = Holmium enucleation of the prostate", img: "./public/img/doctor-icon.png"},
-    {id: 2, title: "Prostatectomia Radical Robótica", img: "../public/img/doctor-icon.png" },
-    {id: 3, title: "Prostata Benigna", description: "Hiperplasia prostática benigna", img: "../../../public/img/doctor-icon.png"},
-    {id: 4, title: "Cirugía Robótica", description: "Robot da Vinci", img: "../public/img/doctor-icon.png"},
-    {id: 5, title: "Próstata Maligna", description: "Cáncer de próstata", img: "../public/img/doctor-icon.png" },
+    {id: 1, title: "Cirugía Láser de Próstata", minDescription: "HoLEP = Holmium enucleation of the prostate", description: "HoLEP es el último y más avanzado tratamiento mínimamente invasivo que existe para tratar el agrandamiento benigno de la próstata. Y se encuentra en Puebla! HoLEP significa Holmium Láser Enucleación de la Próstata. Por ello siempre que nos refiramos a HOLEP estaremos mencionando al nuevo y revolucionario Láser de Holmium para la Enucleación de la Próstata.", img: "/trash/check-up.png"},
+    {id: 2, title: "Prostatectomia Radical Robótica", img: "/trash/check-up.png" },
+    {id: 3, title: "Prostata Benigna", minDescription: "Hiperplasia prostática benigna", img: "/trash/check-up.png"},
+    {id: 4, title: "Cirugía Robótica", minDescription: "Robot da Vinci", img: "/trash/check-up.png"},
+    {id: 5, title: "Próstata Maligna", minDescription: "Cáncer de próstata", img: "/trash/check-up.png" },
   ];
 
   const openModal = (service) => {
@@ -38,11 +38,12 @@ const Services = () => {
             onClick={() => openModal(service)}
           >
             <div>
-              <div className='bg-[#E8F5E9] mb-4 h-14 w-14 mx-auto rounded-tl-3x1 rounded-br-3x1'>
-                <img src={service.img} alt="" className='-ml-5'/>
+              <div className='mb-4 h-14 w-14 mx-auto rounded-tl-3x1 rounded-br-3x1'>
+                <img src={service.img} height='20px' alt=""  className=''/>
               </div>
               <h4 className='text-2x1 font-bold text-neutralDGrey mb-2 px-2'>{service.title}</h4>
-              <p className='text-sm text-neutralDGrey'>{service.description}</p>
+              <p className='text-sm text-neutralDGrey'>{service.minDescription}</p>
+            
             </div>
           </div>
         ))}
@@ -54,3 +55,12 @@ const Services = () => {
 };
 
 export default Services;
+
+
+const services = [
+    {id: 1, title: "Cirugía Láser de Próstata", minDescription: "HoLEP = Holmium enucleation of the prostate", description: "HoLEP es el último y más avanzado tratamiento mínimamente invasivo que existe para tratar el agrandamiento benigno de la próstata. Y se encuentra en Puebla! HoLEP significa Holmium Láser Enucleación de la Próstata. Por ello siempre que nos refiramos a HOLEP estaremos mencionando al nuevo y revolucionario Láser de Holmium para la Enucleación de la Próstata.", img: "/trash/check-up.png"},
+    {id: 2, title: "Prostatectomia Radical Robótica", img: "/trash/check-up.png" },
+    {id: 3, title: "Prostata Benigna", minDescription: "Hiperplasia prostática benigna", img: "/trash/check-up.png"},
+    {id: 4, title: "Cirugía Robótica", minDescription: "Robot da Vinci", img: "/trash/check-up.png"},
+    {id: 5, title: "Próstata Maligna", minDescription: "Cáncer de próstata", img: "/trash/check-up.png" },
+  ];
