@@ -1,5 +1,5 @@
 import React from 'react';
-import addressImg from '../../public/trash/doctors-room.png';
+import addressImg from '../../public/trash/image6.jpg';
 
 const Address = () => {
   return (
@@ -13,7 +13,7 @@ const Address = () => {
           <div className='md:w-3/4 mx-auto'>
             <h2 className='text-4x1 text-neutralDGrey font-semibold mb-4 md:w-4/5'>Consultorio</h2>
             <p className='md:w-3/4 text-sm text-neutralDGrey mb-8'>Av Kepler 2143, Reserva territorial Atlixcáyotl CP 72190 Puebla, Puebla Torre 1 consultorio 620</p>
-            <a href="https://maps.app.goo.gl/2Pv734JFbGS6C6Bv8" target="_blank" rel="noopener noreferrer" className='btn-primary'>Ver más</a>
+            <a href="https://maps.app.goo.gl/2Pv734JFbGS6C6Bv8" target="_blank" rel="noopener noreferrer" className='btn-primary'>Ver Ubicación</a>
           </div>
         </div>
       </div>

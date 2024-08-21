@@ -9,21 +9,26 @@ import Blog from './components/Blog'
 import Banner from './components/Banner'
 import MyFooter from './components/MyFooter'
 import Home from "./components/Home"
-
+import Gallery from './components/Galllery'
+import Parners from './components/Parners'
 function App() {
 
 
   return (
     <>
-    <Home/>
+
+      <Home/>
       <Navbar />
       <Hero/>
       <Services />
       <About />
       <Address />
+      <Gallery/>
       <Blog />
+      <Parners />
       <Banner />
       <MyFooter />
+     
       
     </>
   )

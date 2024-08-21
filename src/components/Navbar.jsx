@@ -42,7 +42,7 @@ const Navbar = () => {
         <div className='flex justify-between items-center text-base gap-8'>
           <a href="" className='text-2xl font-sans flex items-center space-x-3'>
             <img src="trash/logoo.png" alt="logo" className=' w-14 inline-block items-center' />
-            <span className='text-[#263238]'>Dr. Bruno Rubí López</span>
+            <span className='text-[#263238]'><a href="#home">Dr. Bruno Rubí López</a></span>
           </a>
 
           {/* nav items for large devices */}
