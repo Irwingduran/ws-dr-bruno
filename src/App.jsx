@@ -11,12 +11,15 @@ import MyFooter from './components/MyFooter'
 import Home from "./components/Home"
 import Gallery from './components/Galllery'
 import Parners from './components/Parners'
+import LandingPage from './components/LandingPage'
+
+
 function App() {
 
 
   return (
+    
     <>
-
       <Home/>
       <Navbar />
       <Hero/>
@@ -28,7 +31,7 @@ function App() {
       <Parners />
       <Banner />
       <MyFooter />
-     
+     <LandingPage />
       
     </>
   )
