@@ -5,12 +5,15 @@ import { BsFacebook, BsInstagram, BsLinkedin, BsTiktok, BsTwitter, BsWhatsapp } 
 
 const MyFooter = () => {
   return (
-    <div>
-
     <Footer container>
       <div className="w-full" id='contact'>
-        <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-2">
-          <h2><a href="#home">Dr. Bruno Rubí López</a></h2>
+        <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
+          <div>
+          <a href="#home" className='text-lg font-sans flex items-center space-x-3'>
+            <img src="trash/log.png" alt="logo" className=' w-14 inline-block items-center' />
+            <span className='text-[#263238]'><a href="#home">Dr. Bruno Rubí López</a></span>
+          </a>
+          </div>
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
             <div>
               <Footer.Title title="Links" />
@@ -53,7 +56,7 @@ const MyFooter = () => {
       </div>
     </Footer>
 
-    </div>
+    
   )
 }
 

@@ -4,7 +4,7 @@ const Parners = () => {
   return (
     <div className='md:px-14 px-4 py-16 max-w-screen-2x1 mx-auto'>
     <div className='mt-20 md:w-1/2 mx-auto text-center'>
-      <h2 className='text-4x1 text-neutralDGrey font-semibold mb-2'>Aseguradoras</h2>
+      <h2 className='text-4xl text-neutralDGrey font-semibold mb-2'>Aseguradoras</h2>
     </div>
 
     {/*  parner logo  */}

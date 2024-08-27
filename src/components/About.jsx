@@ -25,7 +25,7 @@ const About = () => {
     <div>
       {/*  about text  */}
       <div className='px-4 lg:px-14 max-w-screen-2x1 mx-auto my-8' id='about'>
-        <h2 className='text-4x1 text-neutralDGrey font-semibold mb-2 text-center'>Sobre mí</h2>
+        <h2 className='text-4xl text-neutralDGrey font-semibold mb-2 text-center'>Sobre mí</h2>
         <div className='md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-12'>
           <div>
             <img src={aboutImg} width="600px" alt="" />
@@ -45,7 +45,7 @@ const About = () => {
       <div className='px-4 lg:px-14 mx-w-screen-2x1 mx-auto bg-neutralSilver py-16'>
         <div className='flex flex-col md:flex-row justify-between items-center gap-8'>
           <div className='md:w-1/2'>
-            <h2 className='text-4x1 text-neutralDGrey font-semibold mb-4 md:w-2/3'>
+            <h2 className='text-4xl text-neutralDGrey font-semibold mb-4 md:w-2/3'>
               Trayectoría
             
             </h2>

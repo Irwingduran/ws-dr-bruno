@@ -9,7 +9,7 @@ const Blog = () => {
   return (
     <div className='px-4 lg:px-14 max-w-screen-2x1 mx-auto my-12' id='blog'>
         <div className='text-center md:w-1/2 mx-auto'>
-        <h2 className='text-4x1 text-neutralDGrey font-semibold mb-4'>Articulos</h2>
+        <h2 className='text-4xl text-neutralDGrey font-semibold mb-4'>Articulos</h2>
         <p className='text-sm text-2x1 text-neutralGrey mb-8 md:w-4/4 mx-auto'>El Dr. Bruno, 
         destacado cirujano urólogo en México, ha captado la atención de importantes medios como Forbes. 
         Estos artículos destacan su dedicación, habilidad y el impacto positivo que ha tenido en la vida de sus pacientes, consolidándolo como un referente en la urología moderna.</p>
