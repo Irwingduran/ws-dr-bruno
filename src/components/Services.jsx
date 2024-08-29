@@ -37,7 +37,7 @@ const Services = () => {
         <p className='text-neutralDGrey'>Especialista en enfermedad benigna y maligna de la próstata</p>
       </div>
 
-        <a href="https://service-landingpage-xi.vercel.app">
+        <a href="https://test-servicetemplate.vercel.app">
       <div className="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service) => (
           <div key={service.id} className="bg-white shadow-md rounded-lg overflow-hidden">
