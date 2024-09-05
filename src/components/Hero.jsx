@@ -20,7 +20,7 @@ const Hero = () => {
                     <span className='text-brandPrimary leading-snug'> Innovador y Eficaz</span> </h1>
                     <p className='text-neutralGrey text-base mb-8'>En la cirugía HoLEP para el tratamiento de la próstata ha sido ampliamente elogiado, 
                     alcanzando el hito de 300 cirugías exitosas. </p>
-                    <a href="https://maps.app.goo.gl/2Pv734JFbGS6C6Bv8" target="_blank" rel="noopener noreferrer" className='btn-primary'>Agendar Cita</a>
+                    <a href="https://api.whatsapp.com/send/?phone=5212228457430&text=Hola+Dr.+encontr%C3%A9+su+perfil+en+findoctor+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className='btn-primary'>Agendar Cita</a>
                     </div>
                 </div>
 

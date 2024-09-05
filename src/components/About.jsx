@@ -25,7 +25,7 @@ const About = () => {
     <div>
       {/*  about text  */}
       <div className='px-4 lg:px-14 max-w-screen-2x1 mx-auto my-8' id='about'>
-        <h2 className='text-4xl text-neutralDGrey font-semibold mb-2 text-center'>Sobre mí</h2>
+        <h2 className='text-4xl text-neutralDGrey font-semibold mb-2 text-center'>Sobre Mí</h2>
         <div className='md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-12'>
           <div>
             <img src={aboutImg} width="600px" alt="" />
@@ -45,11 +45,29 @@ const About = () => {
       <div className='px-4 lg:px-14 mx-w-screen-2x1 mx-auto bg-neutralSilver py-16'>
         <div className='flex flex-col md:flex-row justify-between items-center gap-8'>
           <div className='md:w-1/2'>
+          
             <h2 className='text-4xl text-neutralDGrey font-semibold mb-4 md:w-2/3'>
               Trayectoría
-            
             </h2>
-            <p>El Dr. Rubí cursó la Licenciatura en el Tecnológico de Monterrey Campus Monterrey y la Especialidad en Cirugía General y Urología en el Centro Médico Lic. Adolfo López Mateos avalado por la UAEMEX. También realizó un Curso de Laparoscopia avanzada en el Lap Mentor Training Systems y obtuvo un Entrenamiento de Enucleación Prostática con Láser de Holmio (HOLEP). Actualmente el Dr. Rubí es miembro de las Sociedades Urológicas mas importantes del país y del mundo.</p>
+            <div className='flex items-center gap-4'>
+                   <img src="/logos/icon1.png" width="40px" alt="" /> 
+                <div>
+                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>Tecnológico de Monterrey Campus Monterrey</h4>
+                  <p>Considerada la escuela más exclusiva y prestigiosa del país donde se graduó con mención honorífica.</p>
+                </div>
+              </div><div className='flex items-center gap-4'>
+                   <img src="/logos/icon1.png" width="40px" alt="" /> 
+                <div>
+                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>Tecnológico de Monterrey Campus Monterrey</h4>
+                  <p>Considerada la escuela más exclusiva y prestigiosa del país donde se graduó con mención honorífica.</p>
+                </div>
+              </div><div className='flex items-center gap-4'>
+                   <img src="/logos/icon1.png" width="40px" alt="" /> 
+                <div>
+                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>Tecnológico de Monterrey Campus Monterrey</h4>
+                  <p>Considerada la escuela más exclusiva y prestigiosa del país donde se graduó con mención honorífica.</p>
+                </div>
+              </div>
           </div>
 
           {/*  stats  */}        
@@ -57,12 +75,12 @@ const About = () => {
             <div className='space-y-8'>
               <div className='flex items-center gap-4'>
                    <img src="/logos/icon1.png" width="40px" alt="" /> 
+
                 <div>
                   <h4 className='text-2x1 text-neutralDGrey font-semibold'>Tecnológico de Monterrey Campus Monterrey</h4>
                   <p>Considerada la escuela más exclusiva y prestigiosa del país donde se graduó con mención honorífica.</p>
                 </div>
               </div>
-
               <div className='flex items-center gap-4'>
               <img src="/logos/icon3.png" width="40px" alt="" /> 
                 <div>
@@ -70,7 +88,6 @@ const About = () => {
                   <p>En el hospital mas grande del Estado de México. Sub especialidad en Urología.</p>
                 </div>
               </div>
-
               <div className='flex items-center gap-4'>
                 <img src="/logos/icon2.png" width="40px" alt="" />
                 <div>
@@ -78,8 +95,6 @@ const About = () => {
                   <p>Certificado por Cirugia robótica</p>
                 </div>
               </div>
-
-
               <div className='flex items-center gap-4'>
                 <img src="/logos/icon4.png"  width="40px" alt="" />
                 <div>

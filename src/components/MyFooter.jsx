@@ -11,7 +11,7 @@ const MyFooter = () => {
           <div>
           <a href="#home" className='text-lg font-sans flex items-center space-x-3'>
             <img src="trash/log.png" alt="logo" className=' w-14 inline-block items-center' />
-            <span className='text-[#263238]'><a href="#home">Dr. Bruno Rubí López</a></span>
+            <span className='text-[#263238]'><a href="#home">Centro de Próstata</a></span>
           </a>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
@@ -48,8 +48,6 @@ const MyFooter = () => {
             <Footer.Icon href="https://m.facebook.com/DrBrunoRubi/" icon={BsFacebook} />
             <Footer.Icon href="https://www.instagram.com/urobruce" icon={BsInstagram} />
             <Footer.Icon href="https://x.com/urobruce" icon={BsTwitter} />
-            <Footer.Icon href="https://www.linkedin.com/in/urobruce/" icon={BsLinkedin} />
-            <Footer.Icon href="https://www.tiktok.com/@urobruce?is_from_webapp=1&sender_device=pc" icon={BsTiktok} />
             <Footer.Icon href="https://wa.me/5212228457430?text=Hola%20Dr.%20encontr%C3%A9%20su%20perfil%20en%20findoctor%20y%20me%20gustar%C3%ADa%20realizar%20una%20consulta" icon={BsWhatsapp} />
           </div>
         </div>
