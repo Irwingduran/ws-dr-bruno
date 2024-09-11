@@ -42,7 +42,7 @@ const About = () => {
       </div>
 
       {/*  stats  */}
-      <div className='px-4 lg:px-14 mx-w-screen-2x1 mx-auto bg-neutralSilver py-16'>
+      <div className='px-4 lg:px-14 mx-w-screen-2x1 mx-auto bg-colorDark py-16'>
         <div className='flex flex-col md:flex-row justify-between items-center gap-8'>
           <div className='md:w-1/2'>
           
@@ -58,14 +58,14 @@ const About = () => {
               </div><div className='flex items-center gap-4'>
                    <img src="/logos/icon1.png" width="40px" alt="" /> 
                 <div>
-                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>Tecnológico de Monterrey Campus Monterrey</h4>
-                  <p>Considerada la escuela más exclusiva y prestigiosa del país donde se graduó con mención honorífica.</p>
+                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>Especialidad en Cirugía General</h4>
+                  <p>En el hospital mas grande del Estado de México.</p>
                 </div>
               </div><div className='flex items-center gap-4'>
                    <img src="/logos/icon1.png" width="40px" alt="" /> 
                 <div>
-                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>Tecnológico de Monterrey Campus Monterrey</h4>
-                  <p>Considerada la escuela más exclusiva y prestigiosa del país donde se graduó con mención honorífica.</p>
+                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>Sub especialidad en Urología</h4>
+                  <p></p>
                 </div>
               </div>
           </div>
@@ -73,35 +73,31 @@ const About = () => {
           {/*  stats  */}        
           <div className='md:w-1/2 mx-auto flex sm:flex-row flex-col sm:items-center justify-around gap-12'>
             <div className='space-y-8'>
-              <div className='flex items-center gap-4'>
-                   <img src="/logos/icon1.png" width="40px" alt="" /> 
-
+            <div className='flex items-center gap-4'>
+                <img src="/logos/icon4.png"  width="40px" alt="" />
                 <div>
-                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>Tecnológico de Monterrey Campus Monterrey</h4>
-                  <p>Considerada la escuela más exclusiva y prestigiosa del país donde se graduó con mención honorífica.</p>
-                </div>
-              </div>
-              <div className='flex items-center gap-4'>
-              <img src="/logos/icon3.png" width="40px" alt="" /> 
-                <div>
-                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>Especialidad en Cirugía General</h4>
-                  <p>En el hospital mas grande del Estado de México. Sub especialidad en Urología.</p>
+                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>Alta Especialidad en Cirugia Láser de Próstata</h4>
+                  <p>Considerado el maximo rango academico que un cirujano puede llegar a adquirir en su vida.</p>
                 </div>
               </div>
               <div className='flex items-center gap-4'>
                 <img src="/logos/icon2.png" width="40px" alt="" />
                 <div>
-                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>Da vinci por Intuitive en Houston TX, USA</h4>
-                  <p>Certificado por Cirugia robótica</p>
+                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>Cirujano Robótico Certificado (Da Vinci)</h4>
+                  <p>Certificado por Intitutive en Houston TX, USA (logo de un robot Davinci)                   </p>
                 </div>
               </div>
               <div className='flex items-center gap-4'>
-                <img src="/logos/icon4.png"  width="40px" alt="" />
+                   <img src="/logos/icon1.png" width="40px" alt="" /> 
                 <div>
-                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>Alta Especialidad en Cirugia Láser de Próstata</h4>
-                  <p>considerado el maximo rango academico que un cirujano puede llegar a adquirir en su vida.</p>
+                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>International Certificate of Holmium Laser</h4>
+                  <p>Treatment for benign prostatic hyperplasia- Hill Clinic, Solfia Bulgaria
+                  </p>
                 </div>
               </div>
+            
+             
+             
             </div>
           </div>
         </div>

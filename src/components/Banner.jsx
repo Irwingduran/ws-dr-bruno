@@ -2,11 +2,11 @@ import React from 'react'
 
 const Banner = () => {
   return (
-    <div className='px-4 lg:px-14 max-w-screen-2x1 mx-auto bg-neutralSilver py-16'>
+    <div className='px-4 lg:px-14 max-w-screen-2x1 mx-auto bg-colorDark py-16'>
         <div className='flex items-center justify-center lg:w-2/5 mx-auto'>
             <div className='text-center'>
                 <h2 className='lg:text-5x1 text-3xl text-neutral-800 font-semibold mb-6 lg:leading-snug'>
-                    Agenda una cita 
+                ¿Eres candidato a una cirugía de próstata? ¡Agenda una cita aquí!
                 </h2>
                 <div className='flex items-center justify-center gap-8'>
                 <a href="https://wa.me/5212228457430?text=Hola%20Dr.%20encontr%C3%A9%20su%20perfil%20en%20findoctor%20y%20me%20gustar%C3%ADa%20realizar%20una%20consulta">

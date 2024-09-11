@@ -20,15 +20,14 @@ const MyFooter = () => {
               <Footer.LinkGroup col>
                 <Footer.Link href="#service">Servicio</Footer.Link>
                 <Footer.Link href="#about">Sobre Mí</Footer.Link>
-                <Footer.Link href="https://www.doctoralia.com.mx/bruno-rubi-lopez-2/urologo/san-andres-cholula">Agendar Visita</Footer.Link>
+                <Footer.Link href="https://api.whatsapp.com/send/?phone=5212228457430&text=Hola+Dr.+encontr%C3%A9+su+perfil+en+findoctor+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0">Agendar Visita</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
               <Footer.Title title="Contacto" />
               <Footer.LinkGroup col>
                 <Footer.Link href="https://wa.me/5212228457430?text=Hola%20Dr.%20encontr%C3%A9%20su%20perfil%20en%20findoctor%20y%20me%20gustar%C3%ADa%20realizar%20una%20consulta">WhatsApp (2228457430)</Footer.Link>
-              <Footer.Link href="tel:8115162443">URGENCIAS (8115162443)</Footer.Link>
-              <Footer.Link href='mailto:dr.uro.bruce@gmail.com'>Correo Electrónico</Footer.Link>
+              <Footer.Link href='mailto:centrodeprostata@gmail.com'>Correo Electrónico</Footer.Link>
                 
               </Footer.LinkGroup>
             </div>
@@ -43,7 +42,7 @@ const MyFooter = () => {
         </div>
         <Footer.Divider />
         <div className="w-full sm:flex sm:items-center sm:justify-between">
-          <Footer.Copyright href="#" by="Delta Agency™" year={2024} />
+          <Footer.Copyright href="https://delta-digital.com.mx" by="Delta Agency™" year={2024} />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
             <Footer.Icon href="https://m.facebook.com/DrBrunoRubi/" icon={BsFacebook} />
             <Footer.Icon href="https://www.instagram.com/urobruce" icon={BsInstagram} />
