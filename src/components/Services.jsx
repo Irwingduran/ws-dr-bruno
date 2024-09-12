@@ -4,28 +4,21 @@ import React, { useState } from 'react';
 const Services = () => {
   const services = [
     {
-      id: 'urologia-general',
-      title: 'Cirugía General',
-      description: 'Evaluación y tratamiento de condiciones urológicas comunes.',
-      image: '/trash/image3.jpg',
-      path: '/landing1', 
-    },
-    {
       id: 'cirugia-holep',
-      title: 'Cirugía Laparoscópica',
-      description: 'HoLEP es el último y más avanzado tratamiento mínimamente invasivo que existe para tratar el agrandamiento benigno de la próstata.',
+      title: 'Crecimiento Prostático',
+      description: 'Hiperlapsia Próstatica Benigna',
       image: '/trash/image4.jpg',
     },
     {
       id: 'cancer-prostata',
-      title: 'Cirugía HoLEP',
+      title: 'Cáncer de Próstata',
       description: 'Diagnóstico y tratamiento del cáncer de próstata.',
       image: '/trash/image7.jpg',
     },
   ];
 
   return (
-    <div className='md:px-14 px-4 py-16 max-w-screen-2x1 mx-auto' id='service'>
+    <div className='md:px-14 px-4 py-16 max-w-screen-2xl mx-auto' id='service'>
       <div className='mt-20 md:w-1/2 mx-auto text-center '>
         <h2 className='text-4xl text-neutralDGrey font-semibold mb-2'>Servicios</h2>
         <p className='text-neutralDGrey'>Especialista en enfermedad benigna y maligna de la próstata</p>
@@ -51,76 +44,12 @@ const Services = () => {
       </div>
 
       
-      <div className='px-4 lg:px-14 mx-w-screen-2x1 mx-auto bg-white py-16'>
-        <div className='flex flex-col md:flex-row justify-between items-center gap-8'>
-          <div className='md:w-1/2'>
-          
-            <h2 className='text-4xl text-neutralDGrey font-semibold mb-4 md:w-2/3'>
-              Otros Servicios
-            </h2>
-            <div className='flex items-center gap-4'>
-                   <img src="/logos/point.png" width="10px" alt="" /> 
-                <div>
-                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>Biopsia de pene o piel escrotal</h4>
-                </div>
-              </div>
-              <div className='flex items-center gap-4'>
-                   <img src="/logos/point.png" width="10px" alt="" /> 
-                <div>
-                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>Biopsia endoscópica de la uretra</h4>
-                </div>
-              </div>
-              <div className='flex items-center gap-4'>
-                   <img src="/logos/point.png" width="10px" alt="" /> 
-                <div>
-                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>Biopsia endoscópica vesical múltiple</h4>
-                </div>
-              </div>
-              <div className='flex items-center gap-4'>
-                   <img src="/logos/point.png" width="10px" alt="" /> 
-                <div>
-                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>Biopsia endoscópica vesical y uretral única</h4>
-                </div>
-              </div>
-          </div>
-
-          {/*  stats  */}        
-          <div className='md:w-1/2 mx-auto flex sm:flex-row flex-col sm:items-center justify-around gap-12'>
-            <div className='space-y-1'>
-            <div className='flex items-center gap-4'>
-                   <img src="/logos/point.png" width="10px" alt="" /> 
-                <div>
-                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>Biopsia prostática perineal</h4>
-                </div>
-              </div>
-              <div className='flex items-center gap-4'>
-                   <img src="/logos/point.png" width="10px" alt="" /> 
-                <div>
-                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>Biopsia prostática transrectal</h4>
-                </div>
-              </div>
-              <div className='flex items-center gap-4'>
-                   <img src="/logos/point.png" width="10px" alt="" /> 
-                <div>
-                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>Biopsia punción prostática ecodirigida</h4>
-                </div>
-              </div>
-              <div className='flex items-center gap-4'>
-                   <img src="/logos/point.png" width="10px" alt="" /> 
-                <div>
-                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>Biopsia punción testicular</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
 
-      <div className='px-4 lg:px-14 max-w-screen-2x1 mx-auto bg-white py-16'>
+      <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto py-16'>
         <div className='flex items-center justify-center lg:w-2/3 mx-auto'>
             <div className='text-center'>
-                <h2 className='lg:text-5x1 text-2xl text-neutral-800 font-semibold mb-6 lg:leading-snug'>
+                <h2 className='lg:text-2xl text-neutral-800 font-semibold mb-6 lg:leading-snug'>
                     Mira las opiniones verificadas de nuestros pacientes
                 </h2>
                 <div className='flex items-center justify-center gap-8'>
