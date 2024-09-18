@@ -7,7 +7,7 @@ import Blender3 from '../../public/trash/Logo.png';
 
 const Hero = () => {
   return (
-    <div className='bg-neutralSilver'>
+    <div className='bg-neutralSilver h-screen'>
         <div className='px-10 lg:px-14 max-w-screen-2xl mx-auto min-h-screen h-screen'>
             <Carousel className='w-full mx-auto'>
                 <div className='my-28 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12 '>

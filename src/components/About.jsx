@@ -50,7 +50,7 @@ const About = () => {
               Trayectoría
             </h2>
             <div className='flex items-center gap-4'>
-                   <img src="/logos/icon1.png" width="40px" alt="" /> 
+                   <img src="/trash/tec.png" width="40px" alt="" /> 
                 <div>
                   <h4 className='text-2x1 text-neutralDGrey font-semibold'>Tecnológico de Monterrey Campus Monterrey</h4>
                   <p>Considerada la escuela más exclusiva y prestigiosa del país donde se graduó con mención honorífica.</p>
