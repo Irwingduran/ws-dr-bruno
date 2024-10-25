@@ -6,7 +6,7 @@ import { BsFacebook, BsInstagram, BsTwitter, BsWhatsapp } from "react-icons/bs";
 const MyFooter = () => {
   return (
     <Footer container>
-      <div className="w-full" id='contact'>
+      <div className="w-full" >
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>
           <a href="#home" className='text-lg font-sans flex items-center space-x-3'>
@@ -20,13 +20,13 @@ const MyFooter = () => {
               <Footer.LinkGroup col>
                 <Footer.Link href="#service">Service</Footer.Link>
                 <Footer.Link href="#about">About</Footer.Link>
-                <Footer.Link href="https://api.whatsapp.com/send/?phone=5212228457430&text=Hola+Dr.+encontr%C3%A9+su+perfil+en+findoctor+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0">Schedule a Visit</Footer.Link>
+
               </Footer.LinkGroup>
             </div>
             <div>
               <Footer.Title title="Contacto" />
               <Footer.LinkGroup col>
-                <Footer.Link href="https://wa.me/5212228457430?text=Hola%20Dr.%20encontr%C3%A9%20su%20perfil%20en%20findoctor%20y%20me%20gustar%C3%ADa%20realizar%20una%20consulta">WhatsApp (2228457430)</Footer.Link>
+               
               <Footer.Link href='mailto:centrodeprostata@gmail.com'>E-mail</Footer.Link>
                 
               </Footer.LinkGroup>
@@ -47,7 +47,7 @@ const MyFooter = () => {
             <Footer.Icon href="https://m.facebook.com/DrBrunoRubi/" icon={BsFacebook} />
             <Footer.Icon href="https://www.instagram.com/urobruce" icon={BsInstagram} />
             <Footer.Icon href="https://x.com/urobruce" icon={BsTwitter} />
-            <Footer.Icon href="https://wa.me/5212228457430?text=Hola%20Dr.%20encontr%C3%A9%20su%20perfil%20en%20findoctor%20y%20me%20gustar%C3%ADa%20realizar%20una%20consulta" icon={BsWhatsapp} />
+
           </div>
         </div>
       </div>

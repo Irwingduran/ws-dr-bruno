@@ -10,9 +10,9 @@ import Blog from './components/Blog';
 import Banner from './components/Banner';
 import MyFooter from './components/MyFooter';
 import Home from "./components/Home";
-import Gallery from './components/Galllery'
 import Parners from './components/Parners';
 import VideoComponent from './components/VideoComponent';
+import Form from './components/Form';
 
 function App() {
   return (
@@ -21,13 +21,23 @@ function App() {
       <Navbar />
       <Hero />
       <Services />
-      <VideoComponent />
+      
       <About />
       <Address />
-      <Gallery />
+      <div>
+        <h2 className='lg:text-2xl text-center text-neutral-800 font-semibold mb-6 lg:leading-snug'>
+        A case that we documented
+        </h2>
+       
+      <VideoComponent />
+      </div>
       <Blog />
-      <Parners />
       <Banner />
+      <Form/>
+      <Parners />
+     
+   
+     
       <MyFooter />
     </>
   );
