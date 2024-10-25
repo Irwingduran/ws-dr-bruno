@@ -5,8 +5,8 @@ import { BsFacebook, BsInstagram, BsTwitter, BsWhatsapp } from "react-icons/bs";
 
 const MyFooter = () => {
   return (
-    <Footer container>
-      <div className="w-full" >
+    <Footer container className='bg-colorDark'>
+      <div className="w-full " >
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>
           <a href="#home" className='text-lg font-sans flex items-center space-x-3'>
