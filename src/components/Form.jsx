@@ -27,7 +27,7 @@ const Form = () => {
   return (
     <form 
       onSubmit={handleSubmit} 
-      className="max-w-lg mx-auto p-6 bg-white shadow-md rounded-md m-6" id='contact'
+      className="max-w-lg mx-auto p-6 bg-white shadow-md rounded-md m-1" id='contact'
     >
       <h2 className="text-2xl text-center font-bold mb-6">Contact Form</h2>
 
