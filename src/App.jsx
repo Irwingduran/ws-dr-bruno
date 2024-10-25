@@ -12,6 +12,7 @@ import MyFooter from './components/MyFooter';
 import Home from "./components/Home";
 import Gallery from './components/Galllery'
 import Parners from './components/Parners';
+import VideoComponent from './components/VideoComponent';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Navbar />
       <Hero />
       <Services />
+      <VideoComponent />
       <About />
       <Address />
       <Gallery />

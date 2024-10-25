@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
 import { FaXmark, FaBars } from "react-icons/fa6";
 
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -29,24 +30,24 @@ const Navbar = () => {
 
   // navitems array
   const navItems = [
-    { link: "Inicio", path: "home" },
-    { link: "Servicio", path: "service" },
-    { link: "Sobre Mí", path: "about" },
+    { link: "Home", path: "home" },
+    { link: "Service", path: "service" },
+    { link: "About", path: "about" },
     { link: "Blog", path: "blog" },
-    { link: "Contacto", path: "contact" },
-  ]
+    { link: "Contact", path: "contact" },
+  ];
 
   return (
     <header className='w-full bg-white md:bg-transparent fixed top-0 left-0 right-0'>
-      <nav className={`py-4 lg:px-14 ${isSticky ? "sticky top-0 left-0 right-0 border-b bg-white duration-300" : ""}`}>
+      <nav className={`py-4 lg:px-14 ${isSticky ? "sticky top-0 left-0 right-40 border-b bg-white duration-300" : ""}`}>
         <div className='flex justify-between items-center text-base gap-8 mx-1'>
           <a href="" className='text-2xl font-sans flex items-center space-x-3'>
-            <img src="trash/log.png" alt="logo" className='w-14 inline-block items-center'/>
-            <span className='text-[#00435f]'><a href="#home">Centro de Próstata</a></span>
+            <img src="trash/log.png" alt="logo" width="70px" className='w-14 inline-block items-center'/>
+            <span className='text-[#00435f]'><a href="#home">Prostate Center</a></span>
           </a>
 
           {/* nav items for large devices */}
-          <ul className='md:flex space-x-12 hidden'>
+          <ul className='md:flex space-x-12 hidden mx-12 items-center'>
             {
               navItems.map(({ link, path }) => (
                 <Link 
@@ -61,6 +62,16 @@ const Navbar = () => {
                 </Link>
               ))
             }
+            {/* Botón con la bandera de México */}
+            <button className=' text-gray900 hover:bg-brandPrimary hover:text-white px-4 py-2 rounded flex items-center'>
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" 
+                alt="Bandera de México" 
+                width="20" 
+                className="mr-2"
+              />
+              ES
+            </button>
           </ul>
 
           {/* menu btn for only mobile responsive design */}
@@ -96,6 +107,16 @@ const Navbar = () => {
               </Link>
             ))
           }
+          {/* Botón con la bandera de México para versión móvil */}
+          <button className='w-full bg-gray-100 text-gray900 hover:bg-brandPrimary hover:text-white px-4 py-2 rounded flex items-center justify-center'>
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" 
+              alt="Bandera de México" 
+              width="20" 
+              className="mr-2"
+            />
+            ES
+          </button>
         </div>
       </nav>
     </header>
