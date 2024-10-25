@@ -28,7 +28,7 @@ const Blog = () => {
                         <h3 className='mb-3 text-neutralGrey font-semibold'>{article.title}</h3>
                         <div className='flex items-center justify-center grap-8'>
                             <a href={article.link} className='font-bold text-brandPrimary hover:text-neutral-700'>
-                            Ver más{" "}
+                            See more{" "}
                             
                             </a>
                         </div>
