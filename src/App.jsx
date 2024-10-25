@@ -24,13 +24,9 @@ function App() {
       
       <About />
       <Address />
-      <div>
-        <h2 className='lg:text-2xl text-center text-neutral-800 font-semibold mb-6 lg:leading-snug'>
-        A case that we documented
-        </h2>
-       
+
       <VideoComponent />
-      </div>
+   
       <Blog />
       <Banner />
       <Form/>
