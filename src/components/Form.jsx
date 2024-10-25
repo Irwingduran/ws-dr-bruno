@@ -25,6 +25,7 @@ const Form = () => {
   };
 
   return (
+    <div className='px-4 lg:px-14 max-w-screen-2x1 mx-auto py-16'>
     <form 
       onSubmit={handleSubmit} 
       className="max-w-lg mx-auto p-6 bg-white shadow-md rounded-md m-1" id='contact'
@@ -142,6 +143,7 @@ const Form = () => {
         Submit
       </button>
     </form>
+    </div>
   );
 };
 
