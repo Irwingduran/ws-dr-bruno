@@ -63,6 +63,7 @@ const Navbar = () => {
               ))
             }
             {/* Botón con la bandera de México */}
+                 <a href='https://templatedocreact1-english.vercel.app'>
             <button className=' text-gray900 hover:bg-brandPrimary hover:text-white px-4 py-2 rounded flex items-center'>
               <img 
                 src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" 
@@ -72,6 +73,7 @@ const Navbar = () => {
               />
               ES
             </button>
+            </a>
           </ul>
 
           {/* menu btn for only mobile responsive design */}
@@ -108,6 +110,7 @@ const Navbar = () => {
             ))
           }
           {/* Botón con la bandera de México para versión móvil */}
+          <a href='https://templatedocreact1-english.vercel.app'>
           <button className='w-full bg-gray-100 text-gray900 hover:bg-brandPrimary hover:text-white px-4 py-2 rounded flex items-center justify-center'>
             <img 
               src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" 
@@ -117,6 +120,7 @@ const Navbar = () => {
             />
             ES
           </button>
+            </a>
         </div>
       </nav>
     </header>
