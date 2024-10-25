@@ -2,9 +2,7 @@ import React from 'react';
 
 const VideoComponent = () => {
   return (
-    
-    <div className="relative pt-[56.25%]">
-     
+    <div className="relative pt-[56.25%] max-w-3xl mx-auto my-8">
       <iframe 
         src="https://player.vimeo.com/video/1022257625?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
         frameBorder="0"
