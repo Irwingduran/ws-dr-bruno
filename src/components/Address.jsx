@@ -12,8 +12,8 @@ const Address = () => {
           </div>
           <div className='md:w-3/4 mx-auto'>
             <h2 className='text-4xl text-neutralDGrey font-semibold mb-4 md:w-4/5'>Hospital Angeles Puebla</h2>
-            <p className='md:w-3/4 text-sm text-neutralDGrey mb-8'>Considered the most exclusive and equipped hospital in the State of Puebla.</p>
-            <a href="https://hospitalangeles.com/medico/bruno-rubi-lopez" target="_blank" rel="noopener noreferrer" className='btn-primary'>See location</a>
+            <p className='md:w-3/4 text-sm text-neutralDGrey mb-8'>Considerado el hospital más exclusivo y equipado del Estado de Puebla</p>
+            <a href="https://hospitalangeles.com/medico/bruno-rubi-lopez" target="_blank" rel="noopener noreferrer" className='btn-primary'>Ver ubicación</a>
           </div>
         </div>
       </div>

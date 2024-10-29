@@ -8,7 +8,7 @@ const Home = () => {
         <video className="w-full h-full object-cover" src={videoBg} autoPlay loop muted />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
             <h1 className="text-4xl">Bruno Rubí López</h1>
-            <p className="text-x">Expert in Prostate Surgery</p>
+            <p className="text-x">Experto en Cirugía de Próstata</p>
         </div>
     </div>
   )

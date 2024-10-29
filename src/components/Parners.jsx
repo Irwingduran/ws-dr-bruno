@@ -4,8 +4,8 @@ const Parners = () => {
   return (
     <div className='md:px-14 px-4 py-16 max-w-screen-2x1 mx-auto'>
     <div className='mt-20 md:w-1/2 mx-auto text-center'>
-      <h2 className='text-4xl text-neutralDGrey font-semibold mb-2'>Insurers</h2>
-      <p className='text-sm text-neutralGrey mb-8 md:w-4/4 mx-auto'>We work with all national and international insurance companies, and more...</p>
+      <h2 className='text-4xl text-neutralDGrey font-semibold mb-2'>Aseguradoras</h2>
+      <p className='text-sm text-neutralGrey mb-8 md:w-4/4 mx-auto'>Trabajamos con todas las aseguradoras nacionales e internacionales, y más...</p>
     </div>
 
     {/*  parner logo  */}

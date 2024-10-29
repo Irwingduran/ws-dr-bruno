@@ -62,18 +62,16 @@ const Navbar = () => {
                 </Link>
               ))
             }
-            {/* Botón con la bandera de México */}
-            <a href='https://templatedocreact1-english.vercel.app/'>
-            <button className=' text-gray900 hover:bg-brandPrimary hover:text-white px-4 py-2 rounded flex items-center'>
+            {/* Botón con la bandera de Estados Unidos */}
+            <button className='bg-gray-100 text-gray900 hover:bg-brandPrimary hover:text-white px-4 py-2 rounded flex items-center'>
               <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" 
-                alt="Bandera de México" 
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" 
+                alt="Bandera de Estados Unidos" 
                 width="20" 
                 className="mr-2"
               />
-              ES
+              Botón
             </button>
-            </a>
           </ul>
 
           {/* menu btn for only mobile responsive design */}
@@ -109,18 +107,16 @@ const Navbar = () => {
               </Link>
             ))
           }
-          {/* Botón con la bandera de México para versión móvil */}
-          <a href="https://templatedocreact1-english.vercel.app/">
+          {/* Botón con la bandera de Estados Unidos para versión móvil */}
           <button className='w-full bg-gray-100 text-gray900 hover:bg-brandPrimary hover:text-white px-4 py-2 rounded flex items-center justify-center'>
             <img 
-              src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" 
-              alt="Bandera de México" 
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" 
+              alt="Bandera de Estados Unidos" 
               width="20" 
               className="mr-2"
             />
-            ES
+            Botón
           </button>
-          </a>
         </div>
       </nav>
     </header>
