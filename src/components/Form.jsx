@@ -25,11 +25,12 @@ const Form = () => {
   };
 
   return (
+    <div className='px-4 lg:px-14 max-w-screen-2x1 mx-auto py-16'>
     <form 
       onSubmit={handleSubmit} 
-      className="max-w-lg mx-auto p-6 bg-white shadow-md rounded-md"
+      className="max-w-lg mx-auto p-6 bg-white shadow-md rounded-md m-1" id='contact'
     >
-      <h2 className="text-2xl font-bold mb-6">Formulario de Contacto</h2>
+      <h2 className="text-2xl text-center font-bold mb-6">Contact Form</h2>
 
       {/* Full Name */}
       <div className="flex gap-4 mb-4">
@@ -118,23 +119,6 @@ const Form = () => {
         />
       </div>
 
-      {/* Preferred Language */}
-      <div className="mb-4">
-        <label className="block text-gray-700">Preferred Language *</label>
-        <select 
-          name="language" 
-          value={formData.language} 
-          onChange={handleChange} 
-          className="w-full px-4 py-2 border rounded-md"
-          required
-        >
-          <option value="">Choose Your Language</option>
-          <option value="English">English</option>
-          <option value="Spanish">Spanish</option>
-          {/* Agregar más idiomas según sea necesario */}
-        </select>
-      </div>
-
       {/* Procedure */}
       <div className="mb-4">
         <label className="block text-gray-700">What procedure are you interested in? *</label>
@@ -154,11 +138,12 @@ const Form = () => {
 
       <button 
         type="submit" 
-        className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600"
+        className="w-full bg-brandPrimary text-white py-2 rounded-md hover:bg-brandPrimary"
       >
         Submit
       </button>
     </form>
+    </div>
   );
 };
 
