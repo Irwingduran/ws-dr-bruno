@@ -12,33 +12,33 @@ const Blog = () => {
   return (
     <div className='px-4 lg:px-14 max-w-screen-2x1 mx-auto my-12' id='blog'>
         <div className='text-center md:w-1/2 mx-auto'>
-        <h2 className='text-4xl text-neutralDGrey font-semibold mb-4'>Articles</h2>
-        <p className='text-sm text-neutralGrey mb-8 md:w-4/4 mx-auto'>Dr. Bruno, 
-        a leading urological surgeon in Mexico, has captured the attention of important media such as Forbes. 
-        These articles highlight his dedication, skill and the positive impact he has had on the lives of his patients, consolidating him as a reference in modern urology.</p>
+            <h2 className='text-4xl text-neutralDGrey font-semibold mb-4'>Articles</h2>
+            <p className='text-sm text-neutralGrey mb-8 md:w-4/4 mx-auto'>
+                Dr. Bruno, a leading urological surgeon in Mexico, has captured the attention of important media such as Forbes. 
+                These articles highlight his dedication, skill and the positive impact he has had on the lives of his patients, consolidating him as a reference in modern urology.
+            </p>
         </div>
 
-        { /* articles  */ }
-
+        {/* Articles */}
         <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 items-center justify-between'>
-            {
-                article.map( article => <div key={article.id} className='mx-auto relative mb-12 cursor-pointer'>
-                    <img src={article.image} alt=''className='hover:scale-95 transition-all duration-300' />
+            {article.map(article => (
+                <div key={article.id} className='mx-auto relative mb-12 cursor-pointer'>
+                    <a href={article.link} target='_blank' rel='noopener noreferrer'>
+                        <img src={article.image} alt='' className='hover:scale-95 transition-all duration-300' />
+                    </a>
                     <div className='text-center px-4 py-8 bg-white shadow-lg rounded-md md:w-3/4 mx-auto absolute left-0 right-0 -bottom-12'>
                         <h3 className='mb-3 text-neutralGrey font-semibold'>{article.title}</h3>
-                        <div className='flex items-center justify-center grap-8'>
-                            <a href={article.link} className='font-bold text-brandPrimary hover:text-neutral-700'>
-                            Ver más{" "}
-                            
+                        <div className='flex items-center justify-center gap-8'>
+                            <a href={article.link} target='_blank' rel='noopener noreferrer' className='font-bold text-brandPrimary hover:text-neutral-700'>
+                                Ver más
                             </a>
                         </div>
-                    </div> 
-                </div>) 
-            }
+                    </div>
+                </div>
+            ))}
         </div>
     </div>
-  )
+  );
 }
 
-export default Blog
-
+export default Blog;
