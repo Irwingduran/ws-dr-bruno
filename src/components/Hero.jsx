@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Blender1 from '../../public/trash/Img3.png';
-import Blender2 from '../../public/trash/Img1.png';
+import Blender2 from '../../public/trash/forbes.png';
 import Blender3 from '../../public/trash/Logo.png';
 
 const Hero = () => {
@@ -16,7 +16,7 @@ const Hero = () => {
       },
     },
     {
-      image: Blender1,
+      image: Blender2,
       title: 'Bruno Rubí López, urological surgeon prodigy at HoLEP',
       description: 'Bruno Rubí López is considered a young prodigy surgeon, having completed more than 160 procedures with the use of this cutting-edge technology.',
       cta: {
@@ -25,7 +25,7 @@ const Hero = () => {
       },
     },
     {
-      image: Blender2,
+      image: Blender1,
       title: 'Innovative and Effective Approach',
       description: 'In HoLEP surgery for prostate treatment, he has been widely praised, reaching the milestone of 300 successful surgeries.',
       cta: {

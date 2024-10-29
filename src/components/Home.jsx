@@ -22,11 +22,19 @@ const Home = () => {
       {/* Contenido centrado */}
       <div className="relative z-20 h-full flex flex-col justify-center items-center text-white">
         <h1 className="text-4xl md:text-5xl lg:text-6xl text-center px-4">
-          Bruno Rubí López
+          Dr. Bruno Rubí López
         </h1>
         <p className="text-xl md:text-2xl mt-4 text-center px-4">
-          Experto en Cirugía de Próstata
+          Expert in Prostate Surgery
         </p>
+        <a
+          href="https://api.whatsapp.com/send/?phone=5212228457430&text=Hi+Dr.+I+found+your+profile+and+would+like+to+schedule+a+consultation&type=phone_number&app_absent=0"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 px-6 py-3 bg-brandPrimary hover:bg-neutralDGrey text- text-lg font-semibold rounded-full shadow-lg transition-colors duration-300"
+        >
+          Make an Appointment
+        </a>
       </div>
     </div>
   );

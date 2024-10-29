@@ -6,13 +6,13 @@ const Services = () => {
       id: 'cirugia-holep',
       title: 'Prostatic Growth',
       description: 'Benign Prostatic Hyperlapsia',
-      image: '/trash/service.jpg',
+      image: '/trash/service2.jpg',
     },
     {
       id: 'cancer-prostata',
       title: 'Prostate Cancer',
       description: 'Diagnosis and treatment of prostate cancer.',
-      image: '/trash/service2.jpg',
+      image: '/trash/service.png',
     },
   ];
 
