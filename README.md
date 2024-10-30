@@ -1,8 +1,22 @@
-# React + Vite
+# Vite docTemplate
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a basic project created with Vite. Vite is a fast and modern building tool for web applications.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fast startup time and hot reload.
+- Support for ES modules.
+- Minimal configuration and easy to use.
+
+## Technologies Used
+
+- Vite](https://vitejs.dev/)
+- React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/) 
+
+## Installation
+
+1. Clone the repository:
+
+   ````bash
+   git clone https://github.com/tu-usuario/nombre-del-repositorio.git
