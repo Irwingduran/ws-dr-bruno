@@ -25,6 +25,7 @@ const Services = () => {
 
       <div>
         {/* Sección de servicios centrados */}
+        <a href="https://test-servicetemplate.vercel.app/">
         <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
           {services.map((service) => (
             <div key={service.id} className="bg-white shadow-md rounded-lg overflow-hidden w-full md:w-80">
@@ -36,7 +37,9 @@ const Services = () => {
             </div>
           ))}
         </div>
+        </a>
       </div>
+
 
       
 

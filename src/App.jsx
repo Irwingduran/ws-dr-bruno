@@ -7,6 +7,7 @@ import About from './components/About';
 import Address from './components/Address';
 import Blog from './components/Blog';
 import Banner from './components/Banner';
+import TestimonialsCarousel from './components/TestimonialsCarousel';
 import MyFooter from './components/MyFooter';
 import Parners from './components/Parners';
 import VideoComponent from './components/VideoComponent';
@@ -30,6 +31,7 @@ function App() {
       <Blog />
       <VideoComponent />
       <Banner />
+      <TestimonialsCarousel/>
       <Parners />
       <MyFooter />
     </>
