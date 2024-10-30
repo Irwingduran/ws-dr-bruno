@@ -1,5 +1,5 @@
 import React from 'react';
-import addressImg from '../../public/trash/image6.jpg';
+import addressImg from '../../public/trash/image2.png';
 
 const Address = () => {
   return (

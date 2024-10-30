@@ -41,7 +41,7 @@ const MyFooter = () => {
           </div>
         </div>
         <Footer.Divider />
-        <div className="w-full sm:flex sm:items-center sm:justify-between  bg-white">
+        <div className="w-full sm:flex sm:items-center sm:justify-between bg-colorDark">
           <Footer.Copyright href="https://delta-digital.com.mx" by="Delta Agency™" year={2024} />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
             <Footer.Icon href="https://m.facebook.com/DrBrunoRubi/" icon={BsFacebook} />

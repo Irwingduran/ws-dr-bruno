@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client'; 
 import './App.css';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
@@ -9,31 +8,29 @@ import Address from './components/Address';
 import Blog from './components/Blog';
 import Banner from './components/Banner';
 import MyFooter from './components/MyFooter';
-import Home from "./components/Home";
 import Parners from './components/Parners';
 import VideoComponent from './components/VideoComponent';
-import Form from './components/Form';
+import Home from './components/Home';
+import Opinions from './components/Opinions';
 
 function App() {
   return (
     <>
-      <Home />
       <Navbar />
-      <Hero />
-      <Services />
       
+    <Home/>
+      <Hero />
+      
+      
+      <Services />
+      <Opinions/>
       <About />
       <Address />
-
-      <VideoComponent />
-   
+     
       <Blog />
+      <VideoComponent />
       <Banner />
-      <Form/>
       <Parners />
-     
-   
-     
       <MyFooter />
     </>
   );

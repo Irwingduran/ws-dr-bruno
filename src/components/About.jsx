@@ -42,62 +42,75 @@ const About = () => {
       </div>
 
       {/*  stats  */}
-      <div className='px-4 lg:px-14 mx-w-screen-2x1 mx-auto bg-colorDark py-16'>
-        <div className='flex flex-col md:flex-row justify-between items-center gap-8'>
-          <div className='md:w-1/2'>
-          
-            <h2 className='text-4xl text-neutralDGrey font-semibold mb-4 md:w-2/3'>
-            Trajectory
-            </h2>
-            <div className='flex items-center gap-4'>
-                   <img src="/trash/tec.png" width="40px" alt="" /> 
-                <div>
-                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>Tecnológico de Monterrey Campus Monterrey</h4>
-                  <p>Considered the most exclusive and prestigious school in the country, where he graduated with honors.</p>
-                </div>
-              </div><div className='flex items-center gap-4'>
-                   <img src="/logos/icon1.png" width="40px" alt="" /> 
-                <div>
-                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>Specialization in General Surgery</h4>
-                  <p>At the largest hospital in the State of Mexico.</p>
-                </div>
-              </div><div className='flex items-center gap-4'>
-                   <img src="/logos/icon1.png" width="40px" alt="" /> 
-                <div>
-                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>Sub-specialty in Urology</h4>
-                  <p></p>
-                </div>
-              </div>
-          </div>
+      <div className='px-6 lg:px-20 mx-auto max-w-screen-2xl bg-colorDark py-16'>
+  <div className='flex flex-col md:flex-row justify-between items-start gap-12'>
+    <div className='md:w-1/2 space-y-6'>
+      <h2 className='text-4xl text-neutralDGrey font-semibold mb-6 md:w-3/4'>
+        Trajectory
+      </h2>
 
-          {/*  stats  */}        
-          <div className='md:w-1/2 mx-auto flex sm:flex-row flex-col sm:items-center justify-around gap-12'>
-            <div className='space-y-8'>
-            <div className='flex items-center gap-4'>
-                <img src="/logos/icon4.png"  width="40px" alt="" />
-                <div>
-                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>Advanced Specialty in Prostate Laser Surgery</h4>
-                  <p>Considered the highest academic rank a surgeon can achieve in their career.</p>
-                </div>
-              </div>
-              <div className='flex items-center gap-4'>
-                <img src="/logos/icon2.png" width="40px" alt="" />
-                <div>
-                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>Certified Robotic Surgeon (Da Vinci)</h4>
-                  <p>Certified by Intuitive in Houston, TX, USA (Da Vinci robot logo)</p>
-                </div>
-              </div>
-              <div className='flex items-center gap-4'>
-                   <img src="/logos/icon1.png" width="40px" alt="" /> 
-                <div>
-                  <h4 className='text-2x1 text-neutralDGrey font-semibold'>International Certificate of Holmium Laser</h4>
-                  <p>Treatment for benign prostatic hyperplasia - Hill Clinic, Sofia, Bulgaria</p>
-                </div>
-              </div>
-            </div>
+      <div className='space-y-8'>
+        <div className='flex items-center gap-6'>
+          <img src="/logos/tecMTY.png" width="48px" alt="" />
+          <div>
+            <h4 className='text-xl text-neutralDGrey font-semibold'>Tecnológico de Monterrey Campus Monterrey</h4>
+            <p className='text-neutralDGrey'>
+            Graduated with honors from the country's most prestigious school.
+            </p>
+          </div>
+        </div>
+        
+        <div className='flex items-center gap-6'>
+          <img src="/logos/icon1.png" width="48px" alt="" />
+          <div>
+            <h4 className='text-xl text-neutralDGrey font-semibold'>Specialization in General Surgery</h4>
+            <p className='text-neutralDGrey'>At the largest hospital in the State of Mexico.</p>
+          </div>
+        </div>
+
+        <div className='flex items-center gap-6'>
+          <img src="/logos/icon1.png" width="48px" alt="" />
+          <div>
+            <h4 className='text-xl text-neutralDGrey font-semibold'>Sub-specialty in Urology</h4>
+            <p className='text-neutralDGrey'></p>
           </div>
         </div>
       </div>
+    </div>
+
+    {/* Stats */}
+    <div className='md:w-1/2 space-y-8'>
+      <div className='flex items-center gap-6'>
+        <img src="/logos/icon4.png" width="48px" alt="" />
+        <div>
+          <h4 className='text-xl text-neutralDGrey font-semibold'>Advanced Specialty in Prostate Laser Surgery</h4>
+          <p className='text-neutralDGrey'>
+            Considered the highest academic rank a surgeon can achieve in their career.
+          </p>
+        </div>
+      </div>
+
+      <div className='flex items-center gap-6'>
+        <img src="/logos/icon2.png" width="48px" alt="" />
+        <div>
+          <h4 className='text-xl text-neutralDGrey font-semibold'>Certified Robotic Surgeon (Da Vinci)</h4>
+          <p className='text-neutralDGrey'>Certified by Intuitive in Houston, TX, USA (Da Vinci robot logo)</p>
+        </div>
+      </div>
+
+      <div className='flex items-center gap-6'>
+        <img src="/logos/icon1.png" width="48px" alt="" />
+        <div>
+          <h4 className='text-xl text-neutralDGrey font-semibold'>International Certificate of Holmium Laser</h4>
+          <p className='text-neutralDGrey'>
+            Treatment for benign prostatic hyperplasia - Hill Clinic, Sofia, Bulgaria
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
       <Modal showModal={showModal} closeModal={closeModal} content={modalContent} />
