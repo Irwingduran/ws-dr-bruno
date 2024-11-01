@@ -13,6 +13,7 @@ import Parners from './components/Parners';
 import VideoComponent from './components/VideoComponent';
 import Home from './components/Home';
 import Opinions from './components/Opinions';
+import Form from './components/Form';
 
 function App() {
   return (
@@ -24,14 +25,18 @@ function App() {
       
       
       <Services />
-      <Opinions/>
+      <Banner />
+      
       <About />
-      <Address />
+      
      
+      <Address />
       <Blog />
       <VideoComponent />
-      <Banner />
+      
       <TestimonialsCarousel/>
+      <Opinions/>
+      <Form/>
       <Parners />
       <MyFooter />
     </>
