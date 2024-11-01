@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Blender1 from '../../public/trash/Img3.png';
+import Blender1 from '../../public/trash/FB-post.jpeg';
 import Blender2 from '../../public/logos/forbes.png';
 import Blender3 from '../../public/trash/Logo.png';
 
@@ -11,7 +11,7 @@ const Hero = () => {
       title: 'Innovative and Effective Approach',
       description: 'In HoLEP surgery for prostate treatment, he has been widely praised, reaching the milestone of 300 successful surgeries.',
       cta: {
-        label: 'Schedule Appointment',
+        label: 'Book appointment',
         link: 'https://api.whatsapp.com/send/?phone=5212228457430&text=Hi+Dr.+I+found+your+profile+on+findoctor+and+would+like+to+schedule+a+consultation&type=phone_number&app_absent=0',
       },
     },
@@ -20,16 +20,16 @@ const Hero = () => {
       title: 'Forbes: "Bruno Rubí López, urological surgeon prodigy at HoLEP".',
       description: 'Bruno Rubí López is considered a young prodigy surgeon, having completed more than 160 procedures with the use of this cutting-edge technology.',
       cta: {
-        label: 'View Article',
+        label: 'View article',
         link: 'Bruno Rubí López is considered a young prodigy surgeon, having completed more than 160 procedures with the use of this cutting-edge technology.',
       },
     },
     {
       image: Blender1,
-      title: 'Innovative and Effective Approach',
-      description: 'In HoLEP surgery for prostate treatment, he has been widely praised, reaching the milestone of 300 successful surgeries.',
+      title: 'Robotic Surgeon Top Surgeon',
+      description: 'Da Vinci Company in Mexico offers situation to Dr. Bruno Rubi, expert in Robotic Surgery.',
       cta: {
-        label: 'View Facebook Post',
+        label: 'View Facebook post',
         link: 'https://www.facebook.com/share/p/vkAQS6ArYr8XvLpe/',
       },
     },

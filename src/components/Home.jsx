@@ -33,7 +33,7 @@ const Home = () => {
           rel="noopener noreferrer"
           className="mt-6 px-6 py-3 bg-brandPrimary hover:bg-neutralDGrey text- text-lg font-semibold rounded-full shadow-lg transition-colors duration-300"
         >
-          Make an Appointment
+          Book Appointment
         </a>
       </div>
     </div>

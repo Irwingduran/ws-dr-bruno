@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import aboutImg from '../../public/trash/image3.jpg';
+import icon1 from '../../public/trash/Sociedad Mexicana de Urología.png';
+import icon2 from '../../public/trash/American Urological Association.svg';
+import icon3 from '../../public/trash/Colegio Mexicano de Urología Nacional.png';
 import Modal from './ModalAbout'; 
+import { fromJSON } from 'postcss';
+
 
 const About = () => {
   const [showModal, setShowModal] = useState(false);
@@ -24,22 +29,28 @@ const About = () => {
   return (
     <div>
       {/*  about text  */}
-      <div className='px-4 lg:px-14 max-w-screen-2x1 mx-auto my-8' id='about'>
-        <h2 className='text-4xl text-neutralDGrey font-semibold mb-2 text-center'>About</h2>
-        <div className='md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-12'>
-          <div>
-            <img src={aboutImg} width="600px" alt="" />
-          </div>
-          <div className='md:w-3/4 mx-auto'>
-            <h2 className='text-4x1 text-neutralDGrey font-semibold mb-4 md:w-4/5'>Dr. Bruno: International Expert in Prostate Laser Surgery (HoLEP)</h2>
-            <p className='md:w-3/4 text-sm text-neutralDGrey mb-8'>
-            In the field of modern urology, few names resonate as strongly as that of Dr. Bruno, founder of the Prostate and Urinary Tract Center in Puebla, Mexico. 
-            Recognized for his expertise and skill in prostate laser surgery on an international level.
-            </p>
-            <button className='btn-primary' onClick={openModal}>See more</button>
-          </div>
-        </div>
+      <div className='px-10 lg:px-14 max-w-screen-2x1 mx-auto my-8' id='about'>
+  <h2 className='text-4xl text-neutralDGrey font-semibold mb-2 text-center py-8'>About</h2>
+  <div className='md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-12'>
+    <div>
+      <img src={aboutImg} width="600px" alt="Doctor Bruno" />
+    </div>
+    <div className='md:w-3/4 mx-auto'>
+      <h2 className='text-4x1 text-neutralDGrey font-semibold mb-4 md:w-4/5'>Dr. Bruno: International Expert in Prostate Laser Surgery (HoLEP)</h2>
+      <p className='md:w-3/4 text-sm text-neutralDGrey mb-8'>
+        In the field of modern urology, few names resonate as strongly as that of Dr. Bruno, founder of the Prostate and Urinary Tract Center in Puebla, Mexico. 
+        Recognized for his expertise and skill in prostate laser surgery on an international level.
+      </p>
+      <div className='flex justify-center md:justify-start gap-4 mb-8'>
+      <img src={icon1} alt="Doctor Bruno"  style={{ width: "68px", height: "68px" }} />
+      <img src={icon2} alt="Doctor Bruno"  style={{ width: "68px", height: "68px" }}/>
+      <img src={icon3} alt="Doctor Bruno"  style={{ width: "68px", height: "68px" }}/>
       </div>
+      <button className='btn-primary' onClick={openModal}>See more</button>
+    </div>
+  </div>
+</div>
+
 
       {/*  stats  */}
       <div className='px-6 lg:px-20 mx-auto max-w-screen-2xl bg-colorDark py-16'>
