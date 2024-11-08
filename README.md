@@ -19,4 +19,4 @@ This is a basic project created with Vite. Vite is a fast and modern building to
 1. Clone the repository:
 
    ````bash
-   git clone https://github.com/tu-usuario/nombre-del-repositorio.git
+   git clone https://github.com/Irwingduran/docTemplate1.git
