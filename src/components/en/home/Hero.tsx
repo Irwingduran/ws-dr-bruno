@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Blender1 from '../../../assets/icon/Logo.png';
-import Blender2 from '../../../assets/img/Img1.jpg';
+import Blender2 from '../../../assets/img/img1.jpg';
 import Blender3 from '../../../assets/img/FB-post.jpeg';
 import Blender4 from '../../../assets/img/screens.png';
 
