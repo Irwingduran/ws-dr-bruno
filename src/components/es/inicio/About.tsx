@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import aboutImg from '../../../assets/img/image3.jpg';
-import icon1 from '../../../assets/icon/Sociedad Mexicana de Urología.png';
+import icon1 from '../../../assets/icon/SociedadMexicanaUrología.png';
 import icon2 from '../../../assets/icon/logo.svg';
-import icon3 from '../../../assets/icon/Colegio Mexicano de Urología Nacional.png';
+import icon3 from '../../../assets/icon/ColegioMexicanoUrologíaNacional.png';
 import Modal from './ModalAbout'; 
 
 
@@ -109,7 +109,7 @@ const About = () => {
       </div>
 
       <div className='flex items-center gap-6'>
-        <img src="/logos/icon1.png" width="48px" alt="" />
+        <img src="//icon1.png" width="48px" alt="" />
         <div>
           <h4 className='text-xl text-neutralDGrey font-semibold'>International Certificate of Holmium Laser</h4>
           <p className='text-neutralDGrey'>

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import aboutImg from '../../../assets/img/image3.jpg';
-import icon1 from '../../../assets/icon/Sociedad Mexicana de Urología.png';
+import icon1 from '../../../assets/icon/SociedadMexicanaUrología.png';
 import icon2 from '../../../assets/icon/logo.svg';
-import icon3 from '../../../assets/icon/Colegio Mexicano de Urología Nacional.png';
+import icon3 from '../../../assets/icon/ColegioMexicanoUrologíaNacional.png';
 import Modal from './ModalAbout'; 
 
 
