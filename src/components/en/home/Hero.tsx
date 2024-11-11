@@ -51,7 +51,7 @@ const Hero = () => {
       description: 'To traveling to Puebla for your operation with Toni Lucca',
       cta: {
         label: 'View video',
-        action: () => handleScroll('video') // ID de tu sección de video
+        action: () => handleScroll('video')
       },
     },
   ];
@@ -82,50 +82,59 @@ const Hero = () => {
   };
 
   return (
-    <div className="bg-neutralSilver h-fit relative">
-      <div className="px-10 lg:px-14 max-w-screen-2xl mx-auto min-h-screen flex items-center justify-center">
-        <div className="my-28 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12">
-          <div className="relative overflow-hidden w-full h-[500px] md:h-[600px]">
+    <div className="bg-neutralSilver min-h-screen relative">
+      <div className="px-4 sm:px-6 lg:px-14 max-w-screen-2xl mx-auto flex items-center justify-center">
+        <div className="py-8 md:py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-6 md:gap-12 w-full">
+          {/* Contenedor de imagen con aspect ratio */}
+          <div className="relative w-full md:w-1/2 aspect-[4/3] md:aspect-[16/9] overflow-hidden rounded-lg">
             <img
               src={slides[currentIndex].image}
               alt="sliderImg"
-              className="object-cover w-full h-full transition-opacity duration-1000 ease-in-out opacity-90 hover:opacity-100"
+              className="absolute inset-0 w-full h-full object-contain md:object-cover transition-opacity duration-1000 ease-in-out opacity-90 hover:opacity-100"
             />
           </div>
-          <div className="md:w-1/2">
-            <h1 className="text-4xl font-semibold mb-4 text-neutralDGrey md:w-3/4 leading-snug">
+          
+          {/* Contenido de texto */}
+          <div className="w-full md:w-1/2 space-y-4 md:space-y-6">
+            <h1 className="text-2xl md:text-4xl font-semibold text-neutralDGrey leading-tight md:leading-snug">
               {slides[currentIndex].title}
             </h1>
-            <p className="text-neutralGrey text-base mb-8">
+            <p className="text-sm md:text-base text-neutralGrey">
               {slides[currentIndex].description}
             </p>
             <button
               onClick={(e) => handleCtaClick(e, slides[currentIndex])}
-              className="btn-primary transition transform hover:scale-105"
+              className="btn-primary transition transform hover:scale-105 w-full md:w-auto"
             >
               {slides[currentIndex].cta.label}
             </button>
           </div>
         </div>
-        <div className="absolute inset-x-0 bottom-20 flex justify-center">
+
+        {/* Controles del carrusel */}
+        <div className="absolute bottom-20 left-0 right-0 flex justify-center space-x-4 px-4">
           <button
-            className="bg-brandPrimary text-white font-bold py-2 px-4 mx-2 rounded-full hover:bg-brandDark transition duration-300"
+            className="bg-brandPrimary text-white py-2 px-4 rounded-full hover:bg-brandDark transition duration-300"
             onClick={handlePrevious}
+            aria-label="Previous slide"
           >
             &#9664;
           </button>
           <button
-            className="bg-brandPrimary text-white font-bold py-2 px-4 mx-2 rounded-full hover:bg-brandDark transition duration-300"
+            className="bg-brandPrimary text-white py-2 px-4 rounded-full hover:bg-brandDark transition duration-300"
             onClick={handleNext}
+            aria-label="Next slide"
           >
             &#9654;
           </button>
         </div>
-        <div className="absolute bottom-10 flex justify-center w-full space-x-2">
+
+        {/* Indicadores */}
+        <div className="absolute bottom-10 left-0 right-0 flex justify-center space-x-2">
           {slides.map((_, index) => (
             <div
               key={index}
-              className={`w-3 h-3 rounded-full ${
+              className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-colors ${
                 index === currentIndex ? 'bg-brandPrimary' : 'bg-neutralGrey'
               }`}
             />
