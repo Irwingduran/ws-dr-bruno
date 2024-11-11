@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import Navbar from "../Navbar";
 import { FaStar } from 'react-icons/fa';
-import holepImg from '../../../assets/img/holepService.jpeg';
+import cancerImg from '../../../assets/img/cancer.png';
+import holepImg from '../../../assets/img/holepService.jpeg'
 import MyFooter from "../MyFooter";
 
 // Definimos la interfaz para la pregunta
@@ -79,22 +80,38 @@ const ServiceCancer= () => {
         <header className="bg-brandPrimary text-white py-6">
           <div className="container mx-auto px-4">
             <h1 className="text-4xl font-bold">Prostate Cancer</h1>
-            <p className="text-lg mt-2">Advanced treatment for prostate enlargement.</p>
+            <p className="text-lg mt-2">Advanced treatment for cancer prostate.</p>
           </div>
         </header>
 
         {/* Sección de Introducción */}
         <section className="container mx-auto px-4 py-12 flex flex-col md:flex-row items-center md:items-start">
           <div className="md:w-2/3 mb-4 md:mb-0">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">What is HoLEP Surgery?</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">What is prostate cancer?</h2>
             <p className="text-lg text-gray-700">
-              HoLEP is the latest and most advanced minimally invasive treatment available to treat benign prostate enlargement (Prostatic Hyperplasia) and it is already performed in Puebla! HoLEP stands for Holmium Laser Enucleation of the Prostate. This is an avant-garde technique that offers multiple benefits to our patients, being a laser superior to those previously known for its cutting and coagulation capacity.
+            Cancer is caused when cells in the body begin to grow out of control. Cells in almost any part of the body can become cancer cells and then spread to other areas of the body.
+            </p> <br />
+            <p className="text-lg text-gray-700">
+            Prostate cancer occurs when cells in the prostate begin to grow out of control. The prostate is a gland that only men have. This gland produces some of the fluid that makes up semen.
             </p>
           </div>
           <div className="md:w-1/3 flex justify-center md:justify-end">
-            <img src={holepImg} alt="HoLEP Surgery" className="w-full h-auto md:w-80 rounded-lg shadow-md" />
+            <img src={cancerImg} alt="HoLEP Surgery" className="w-full h-auto md:w-80 rounded-lg shadow-md" />
           </div>
         </section>
+
+        <section className="container mx-auto px-4 py-12 flex flex-col md:flex-row items-center md:items-start">
+  <div className="md:w-1/3 flex justify-center md:justify-start mb-4 md:mb-0">
+    <img src={holepImg} alt="HoLEP Surgery" className="w-full h-auto md:w-80 rounded-lg shadow-md" />
+  </div>
+  <div className="md:w-2/3">
+    <h2 className="text-3xl font-bold text-gray-800 mb-4">What is HoLEP Surgery?</h2>
+    <p className="text-lg text-gray-700">
+      HoLEP is the latest and most advanced minimally invasive treatment available to treat benign prostate enlargement (Prostatic Hyperplasia) and it is already performed in Puebla! HoLEP stands for Holmium Laser Enucleation of the Prostate. This is an avant-garde technique that offers multiple benefits to our patients, being a laser superior to those previously known for its cutting and coagulation capacity.
+    </p>
+  </div>
+</section>
+
 
         {/* Sección de Beneficios */}
         <section className="py-12 bg-neutralSilver">
@@ -117,7 +134,7 @@ const ServiceCancer= () => {
           <div className="w-full h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden shadow-md">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/b4q9qanbfW0?si=J3LpJyD8MmB2UM2z"
+              src="https://www.youtube.com/embed/oeW2n63QkRE?si=NAzmTcAU0PItzcL9"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
