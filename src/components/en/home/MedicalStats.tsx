@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Heart, Star, Stethoscope, SmilePlus, LucideIcon } from 'lucide-react';
 
-// Si no tienes instalado shadcn/ui, podemos crear nuestro propio componente Card
+
 interface CardProps {
   className?: string;
   children: React.ReactNode;
@@ -71,10 +71,10 @@ interface Stat {
 
 const MedicalStats: React.FC = () => {
   const stats: Stat[] = [
-    { icon: Stethoscope, value: 1080, label: "Cirugías" },
-    { icon: Heart, value: 650, label: "Consultas" },
-    { icon: Star, value: 80, label: "Pacientes ayudados" },
-    { icon: SmilePlus, value: 180, label: "Sonrisas" }
+    { icon: Stethoscope, value: 1080, label: "Surgeries" },
+    { icon: Heart, value: 650, label: "Consultations" },
+    { icon: Star, value: 80, label: "Patients helped" },
+    { icon: SmilePlus, value: 180, label: "Smiles" }
   ];
 
   return (
