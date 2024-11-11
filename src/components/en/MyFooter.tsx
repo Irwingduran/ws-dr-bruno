@@ -10,7 +10,7 @@ const MyFooter = () => {
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>
           <a href="/" className='text-lg font-sans flex items-center space-x-3'>
-            <img src="trash/log.png" alt="logo" className=' w-14 inline-block items-center' />
+            <img src="/logo.png" alt="logo" className=' w-14 inline-block items-center' />
             <span className='text-[#263238]'><a href="#home">Prostate Center</a></span>
           </a>
           </div>
