@@ -100,7 +100,7 @@ const ServiceCancer= () => {
           </div>
         </section>
 
-        <section className="container mx-auto px-4 py-12 flex flex-col md:flex-row items-center md:items-start">
+        <section className="container bg-neutralSilver mx-auto px-4 py-12 flex flex-col md:flex-row items-center md:items-start">
   <div className="md:w-1/3 flex justify-center md:justify-start mb-4 md:mb-0">
     <img src={holepImg} alt="HoLEP Surgery" className="w-full h-auto md:w-80 rounded-lg shadow-md" />
   </div>
@@ -114,7 +114,7 @@ const ServiceCancer= () => {
 
 
         {/* Sección de Beneficios */}
-        <section className="py-12 bg-neutralSilver">
+        <section className="py-12 bg-white">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">HoLEP Surgery</h2>
             <ul className="list-disc list-inside text-lg text-gray-700 space-y-2">
