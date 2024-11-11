@@ -109,7 +109,7 @@ const About = () => {
       </div>
 
       <div className='flex items-center gap-6'>
-        <img src="//icon1.png" width="48px" alt="" />
+        <img src="/logos/icon1.png" width="48px" alt="" />
         <div>
           <h4 className='text-xl text-neutralDGrey font-semibold'>International Certificate of Holmium Laser</h4>
           <p className='text-neutralDGrey'>
