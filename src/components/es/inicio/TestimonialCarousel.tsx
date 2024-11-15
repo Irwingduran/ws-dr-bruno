@@ -9,19 +9,19 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    text: 'I recently met with Dr. Bruno Rubi, when he consulted at the Riberas hospital in Ajijic.',
+    text: 'Recientemente conocí al Dr. Bruno Rubí cuando consultó en el hospital Riberas en Ajijic.',
     name: 'Louis Solomon',
-    date: '3 months ago',
+    date: 'hace 3 meses',
   },
   {
-    text: 'He is an eminence, he explains absolutely everything in such a way that you understand perfectly both the condition and the treatment and he gives you possible solutions for the condition. Excellent human being.',
+    text: 'Es una eminencia, explica absolutamente todo de tal manera que entiendes perfectamente tanto la condición como el tratamiento, y te da posibles soluciones para la condición. Excelente ser humano.',
     name: 'Paola Gutiérrez',
-    date: '8 months ago',
+    date: 'hace 8 meses',
   },
   {
-    text: 'The doctor gave my dad the best service there can be, great doctor, explains everything very well. Very grateful to him and his staff.',
-    name: 'Dulce Hernandez',
-    date: '8 months ago',
+    text: 'El doctor le brindó a mi papá el mejor servicio que puede haber, gran doctor, explica todo muy bien. Muy agradecida con él y su personal.',
+    name: 'Dulce Hernández',
+    date: 'hace 8 meses',
   },
 ];
 
@@ -41,7 +41,7 @@ const TestimonialCarousel: React.FC = () => {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-10 text-neutralDGrey">Patient Testimonials</h2>
+        <h2 className="text-4xl font-bold text-center mb-10 text-neutralDGrey">Testimonios de Pacientes</h2>
         <div className="flex justify-center">
           <div className="max-w-2xl p-8 bg-brandPrimary rounded-xl shadow-lg transform transition-all duration-500">
             <p className="text-xl italic text-white mb-6">

@@ -7,125 +7,128 @@ import Blender4 from '../../../assets/img/screens.png';
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleScroll = (elementId) => {
-    const element = document.getElementById(elementId);
-    if (element) {
-      element.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
-      });
+  const manejarDesplazamiento = (elementId) => {
+    const elemento = document.getElementById(elementId);
+    if (elemento) {
+      elemento.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
 
-  const slides = [
+  const diapositivas = [
     {
       image: Blender1,
-      title: 'Innovative and Effective Approach',
-      description: 'In HoLEP surgery for prostate treatment, he has been widely praised, reaching the milestone of 300 successful surgeries.',
+      title: 'Enfoque Innovador y Eficaz',
+      description: 'En cirugía HoLEP para el tratamiento de próstata, ha sido ampliamente elogiado, alcanzando el hito de 300 cirugías exitosas.',
       cta: {
-        label: 'Book appointment',
-        action: () => handleScroll('contact') 
+        label: 'Agendar cita',
+        action: () => manejarDesplazamiento('contacto'),
       },
     },
     {
       image: Blender2,
-      title: 'Forbes: "Bruno Rubí López, urological surgeon prodigy at HoLEP".',
-      description: 'Bruno Rubí López is considered a young prodigy surgeon, having completed more than 160 procedures with the use of this cutting-edge technology.',
+      title: 'Forbes: "Bruno Rubí López, prodigio en cirugía urológica con HoLEP".',
+      description: 'Bruno Rubí López es considerado un joven cirujano prodigio, habiendo realizado más de 160 procedimientos con esta tecnología de vanguardia.',
       cta: {
-        label: 'View article',
+        label: 'Ver artículo',
         link: 'https://www.forbes.com',
       },
     },
     {
       image: Blender3,
-      title: 'Robotic Surgeon Top Surgeon',
-      description: 'Da Vinci Company in Mexico offers situation to Dr. Bruno Rubi, expert in Robotic Surgery.',
+      title: 'Cirujano Robótico Destacado',
+      description: 'Da Vinci Company en México ofrece posición a Dr. Bruno Rubí, experto en cirugía robótica.',
       cta: {
-        label: 'View Facebook post',
+        label: 'Ver publicación en Facebook',
         link: 'https://www.facebook.com/share/p/vkAQS6ArYr8XvLpe/',
       },
     },
     {
       image: Blender4,
-      title: 'A patient shares their experience',
-      description: 'To traveling to Puebla for your operation with Toni Lucca',
+      title: 'Un paciente comparte su experiencia',
+      description: 'Viajar a Puebla para tu operación con Toni Lucca.',
       cta: {
-        label: 'View video',
-        action: () => handleScroll('video') // ID de tu sección de video
+        label: 'Ver video',
+        action: () => manejarDesplazamiento('video'),
       },
     },
   ];
 
-  const handlePrevious = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? slides.length - 1 : prevIndex - 1));
+  const manejarAnterior = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? diapositivas.length - 1 : prevIndex - 1));
   };
 
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === slides.length - 1 ? 0 : prevIndex + 1));
+  const manejarSiguiente = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === diapositivas.length - 1 ? 0 : prevIndex + 1));
   };
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      handleNext();
-    }, 8000);
-
-    return () => clearInterval(interval);
+    const intervalo = setInterval(manejarSiguiente, 8000);
+    return () => clearInterval(intervalo);
   }, []);
 
-  const handleCtaClick = (e, slide) => {
+  const manejarClickCta = (e, diapositiva) => {
     e.preventDefault();
-    if (slide.cta.action) {
-      slide.cta.action();
-    } else if (slide.cta.link) {
-      window.open(slide.cta.link, '_blank');
+    if (diapositiva.cta.action) {
+      diapositiva.cta.action();
+    } else if (diapositiva.cta.link) {
+      window.open(diapositiva.cta.link, '_blank');
     }
   };
 
   return (
-    <div className="bg-neutralSilver h-fit relative">
-      <div className="px-10 lg:px-14 max-w-screen-2xl mx-auto min-h-screen flex items-center justify-center">
-        <div className="my-28 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12">
-          <div className="relative overflow-hidden w-full h-[500px] md:h-[600px]">
+    <div className="bg-neutralSilver min-h-screen relative">
+      <div className="px-4 sm:px-6 lg:px-14 max-w-screen-2xl mx-auto flex items-center justify-center">
+        <div className="py-8 md:py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-6 md:gap-12 w-full">
+          {/* Contenedor de imagen con proporción dinámica */}
+          <div className="relative w-full md:w-1/2 overflow-hidden rounded-lg" style={{ paddingBottom: '56.25%' }}>
             <img
-              src={slides[currentIndex].image}
-              alt="sliderImg"
-              className="object-cover w-full h-full transition-opacity duration-1000 ease-in-out opacity-90 hover:opacity-100"
+              src={diapositivas[currentIndex].image}
+              alt={diapositivas[currentIndex].title}
+              className="absolute inset-0 w-full h-full object-contain transition-opacity duration-1000 ease-in-out opacity-90 hover:opacity-100"
             />
           </div>
-          <div className="md:w-1/2">
-            <h1 className="text-4xl font-semibold mb-4 text-neutralDGrey md:w-3/4 leading-snug">
-              {slides[currentIndex].title}
+
+          {/* Contenido de texto */}
+          <div className="w-full md:w-1/2 space-y-4 md:space-y-6">
+            <h1 className="text-2xl md:text-4xl font-semibold text-neutralDGrey leading-tight md:leading-snug">
+              {diapositivas[currentIndex].title}
             </h1>
-            <p className="text-neutralGrey text-base mb-8">
-              {slides[currentIndex].description}
+            <p className="text-sm md:text-base text-neutralGrey">
+              {diapositivas[currentIndex].description}
             </p>
             <button
-              onClick={(e) => handleCtaClick(e, slides[currentIndex])}
-              className="btn-primary transition transform hover:scale-105"
+              onClick={(e) => manejarClickCta(e, diapositivas[currentIndex])}
+              className="btn-primary transition transform hover:scale-105 w-full md:w-auto"
             >
-              {slides[currentIndex].cta.label}
+              {diapositivas[currentIndex].cta.label}
             </button>
           </div>
         </div>
-        <div className="absolute inset-x-0 bottom-20 flex justify-center">
+
+        {/* Controles del carrusel */}
+        <div className="absolute bottom-20 left-0 right-0 flex justify-center space-x-4 px-4">
           <button
-            className="bg-brandPrimary text-white font-bold py-2 px-4 mx-2 rounded-full hover:bg-brandDark transition duration-300"
-            onClick={handlePrevious}
+            className="bg-brandPrimary text-white py-2 px-4 rounded-full hover:bg-brandDark transition duration-300"
+            onClick={manejarAnterior}
+            aria-label="Diapositiva anterior"
           >
             &#9664;
           </button>
           <button
-            className="bg-brandPrimary text-white font-bold py-2 px-4 mx-2 rounded-full hover:bg-brandDark transition duration-300"
-            onClick={handleNext}
+            className="bg-brandPrimary text-white py-2 px-4 rounded-full hover:bg-brandDark transition duration-300"
+            onClick={manejarSiguiente}
+            aria-label="Diapositiva siguiente"
           >
             &#9654;
           </button>
         </div>
-        <div className="absolute bottom-10 flex justify-center w-full space-x-2">
-          {slides.map((_, index) => (
+
+        {/* Indicadores */}
+        <div className="absolute bottom-10 left-0 right-0 flex justify-center space-x-2">
+          {diapositivas.map((_, index) => (
             <div
               key={index}
-              className={`w-3 h-3 rounded-full ${
+              className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-colors duration-300 ${
                 index === currentIndex ? 'bg-brandPrimary' : 'bg-neutralGrey'
               }`}
             />

@@ -1,3 +1,5 @@
+
+import { Link } from 'react-scroll'
 import videoBg from '../../../assets/video/video.mp4';
 import Navbar from '../Navbar';
 import Hero from './Hero'
@@ -44,12 +46,22 @@ const Inicio = () => {
       Dr. Bruno Rubí López
     </h1>
     <p className="text-xl md:text-2xl mt-4 text-center px-4">
-    Experto en Cirugía de Próstata
+      Experto en Cirugía de Próstata
     </p>
-    <a href="https://api.whatsapp.com/send/?phone=5212228457430&amp;text=Hi+Dr.+I+found+your+profile+and+would+like+to+schedule+a+consultation&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener noreferrer" class="mt-6 px-6 py-3 bg-brandPrimary hover:bg-neutralDGrey text- text-lg font-semibold rounded-full shadow-lg transition-colors duration-300">Agendar Cita</a>
+    <Link
+      to="contact"
+      smooth={true}
+      duration={500}
+      className="mt-6 btn-primary transition transform hover:scale-105 w-full md:w-auto cursor-pointer"
+    >
+      Agendar Cita
+    </Link>
+    
   </div>
 </div>
-<div>
+
+
+    <div>
         <Hero/>
     </div>
     <div>
@@ -74,7 +86,7 @@ const Inicio = () => {
         <TestimonialCarousel/>
         <Opinions/>
     </div>
- 
+  
     <div>
         <Parners/>
     </div>
@@ -88,4 +100,4 @@ const Inicio = () => {
   )
 } 
 
-export default Inicio
+export default Inicio;

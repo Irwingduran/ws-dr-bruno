@@ -1,65 +1,65 @@
 import { Link } from 'react-router-dom';
 
-const ServiceCard = ({ service }) => (
+const TarjetaServicio = ({ servicio }) => (
   <Link 
-    to={service.route}
+    to={servicio.route}
     className="block transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
   >
     <div className="bg-white rounded-lg overflow-hidden shadow-lg h-full">
       <div className="overflow-hidden">
         <img
-          src={service.image}
-          alt={service.title}
+          src={servicio.image}
+          alt={servicio.title}
           className="w-full h-48 object-cover transform transition-transform duration-300 hover:scale-105"
         />
       </div>
       <div className="p-6">
         <h3 className="text-2xl font-bold text-neutralDGrey mb-3">
-          {service.title}
+          {servicio.title}
         </h3>
         <p className="text-neutralDGrey">
-          {service.description}
+          {servicio.description}
         </p>
       </div>
     </div>
   </Link>
 );
 
-const Services = () => {
-  const services = [
+const Servicios = () => {
+  const servicios = [
     {
       id: 'cirugia-holep',
-      title: 'Prostatic Growth',
-      description: 'Benign Prostatic Hyperlapsia',
+      title: 'Crecimiento Prostático',
+      description: 'Hiperplasia Prostática Benigna.',
       image: '/img/service2.jpg',
-      route: '/ServiceGrowth',
+      route: '/es/ServiceGrowth',
     },
     {
       id: 'cancer-prostata',
-      title: 'Prostate Cancer',
-      description: 'Diagnosis & treatment of prostate cancer.',
+      title: 'Cáncer de Próstata',
+      description: 'Diagnóstico y tratamiento del cáncer de próstata.',
       image: '/img/service.png',
-      route: '/ServiceCancer',
+      route: '/es/ServiceCancer',
     },
   ];
 
   return (
-    <section className="py-16 bg-white" id="service">
+    <section className="py-16 bg-white" id="servicio">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Título y descripción */}
         <div className="max-w-2xl mx-auto text-center mb-12">
           <h2 className="text-4xl font-bold text-neutralDGrey mb-4">
-            Our Services
+            Nuestros Servicios
           </h2>
           <p className="text-lg text-neutralDGrey">
-            Specialist in benign and malignant diseases of the prostate gland.
+            Especialista en enfermedades benignas y malignas de la glándula prostática.
           </p>
         </div>
         
         {/* Grid de servicios */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {services.map((service) => (
-            <ServiceCard key={service.id} service={service} />
+          {servicios.map((servicio) => (
+            <TarjetaServicio key={servicio.id} servicio={servicio} />
           ))}
         </div>
       </div>
@@ -67,4 +67,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Servicios;

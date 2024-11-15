@@ -1,14 +1,11 @@
-import React from 'react';
-
-const VideoComponent = () => {
+const ComponenteVideo = () => {
   return (
-    
     <div className="max-w-3xl mx-auto text-neutralDGrey h-fit my-24" id='video'>
       {/* Título del video */}
-      <h1 className="text-3xl font-bold text-center mb-6">A case that we documented</h1>
+      <h1 className="text-3xl font-bold text-center mb-6">Un caso que documentamos</h1>
       <p className='text-sm text-neutralGrey mb-8 md:w-2/3 mx-auto text-center'>
-      A patient shares their experience with Dr. Bruno, a leading urologist in prostate laser surgery, covering their journey from consultation to recovery and the treatment's positive impact.
-            </p>
+        Un paciente comparte su experiencia con el Dr. Bruno, un destacado urólogo en cirugía láser de próstata, cubriendo su viaje desde la consulta hasta la recuperación y el impacto positivo del tratamiento.
+      </p>
       {/* Contenedor del video */}
       <div className="relative pt-[56.25%]">
         <iframe 
@@ -23,4 +20,4 @@ const VideoComponent = () => {
   );
 };
 
-export default VideoComponent;
+export default ComponenteVideo;
