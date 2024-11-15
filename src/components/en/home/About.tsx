@@ -71,7 +71,7 @@ const About = () => {
         </div>
         
         <div className='flex items-center gap-6'>
-          <img src="/logos/icon1.png" width="48px" alt="" />
+          <img src="/logos/icon8.png" width="48px" alt="" />
           <div>
             <h4 className='text-xl text-neutralDGrey font-semibold'>Specialization in General Surgery</h4>
             <p className='text-neutralDGrey'>At the largest hospital in the State of Mexico.</p>
@@ -79,7 +79,7 @@ const About = () => {
         </div>
 
         <div className='flex items-center gap-6'>
-          <img src="/logos/icon1.png" width="48px" alt="" />
+          <img src="/logos/icon6.png" width="48px" alt="" />
           <div>
             <h4 className='text-xl text-neutralDGrey font-semibold'>Sub-specialty in Urology</h4>
             <p className='text-neutralDGrey'></p>
@@ -109,7 +109,7 @@ const About = () => {
       </div>
 
       <div className='flex items-center gap-6'>
-        <img src="/logos/icon1.png" width="48px" alt="" />
+        <img src="/logos/icon7.png" width="48px" alt="" />
         <div>
           <h4 className='text-xl text-neutralDGrey font-semibold'>International Certificate of Holmium Laser</h4>
           <p className='text-neutralDGrey'>

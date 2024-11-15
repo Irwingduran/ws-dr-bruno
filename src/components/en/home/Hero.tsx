@@ -10,10 +10,7 @@ const Hero = () => {
   const handleScroll = (elementId) => {
     const element = document.getElementById(elementId);
     if (element) {
-      element.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
-      });
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
 
@@ -24,7 +21,7 @@ const Hero = () => {
       description: 'In HoLEP surgery for prostate treatment, he has been widely praised, reaching the milestone of 300 successful surgeries.',
       cta: {
         label: 'Book appointment',
-        action: () => handleScroll('contact') 
+        action: () => handleScroll('contact'),
       },
     },
     {
@@ -51,7 +48,7 @@ const Hero = () => {
       description: 'To traveling to Puebla for your operation with Toni Lucca',
       cta: {
         label: 'View video',
-        action: () => handleScroll('video')
+        action: () => handleScroll('video'),
       },
     },
   ];
@@ -65,10 +62,7 @@ const Hero = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      handleNext();
-    }, 8000);
-
+    const interval = setInterval(handleNext, 8000);
     return () => clearInterval(interval);
   }, []);
 
@@ -85,15 +79,15 @@ const Hero = () => {
     <div className="bg-neutralSilver min-h-screen relative">
       <div className="px-4 sm:px-6 lg:px-14 max-w-screen-2xl mx-auto flex items-center justify-center">
         <div className="py-8 md:py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-6 md:gap-12 w-full">
-          {/* Contenedor de imagen con aspect ratio */}
-          <div className="relative w-full md:w-1/2 aspect-[4/3] md:aspect-[16/9] overflow-hidden rounded-lg">
-            <img
-              src={slides[currentIndex].image}
-              alt="sliderImg"
-              className="absolute inset-0 w-full h-full object-contain md:object-cover transition-opacity duration-1000 ease-in-out opacity-90 hover:opacity-100"
-            />
+          {/* Contenedor de imagen con proporción dinámica */}
+          <div className="relative w-full md:w-1/2 overflow-hidden rounded-lg" style={{ paddingBottom: '56.25%' }}>
+          <img
+  src={slides[currentIndex].image}
+  alt={slides[currentIndex].title}
+  className="absolute inset-0 w-full h-full object-contain transition-opacity duration-1000 ease-in-out opacity-90 hover:opacity-100"
+/>
           </div>
-          
+
           {/* Contenido de texto */}
           <div className="w-full md:w-1/2 space-y-4 md:space-y-6">
             <h1 className="text-2xl md:text-4xl font-semibold text-neutralDGrey leading-tight md:leading-snug">
@@ -134,7 +128,7 @@ const Hero = () => {
           {slides.map((_, index) => (
             <div
               key={index}
-              className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-colors ${
+              className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-colors duration-300 ${
                 index === currentIndex ? 'bg-brandPrimary' : 'bg-neutralGrey'
               }`}
             />
