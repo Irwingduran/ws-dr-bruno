@@ -4,14 +4,12 @@ import { FaStar } from 'react-icons/fa';
 import holepImg from '../../../assets/img/holepService.jpeg';
 import MyFooter from "../MyFooter";
 
-// Definimos la interfaz para la pregunta
 interface Question {
   id: number;
   question: string;
   answer: string;
 }
 
-// Componente para cada pregunta individual
 const AccordionItem = ({ question, answer, isOpen, onClick }: {
   question: string;
   answer: string;
@@ -41,29 +39,26 @@ const AccordionItem = ({ question, answer, isOpen, onClick }: {
 };
 
 const ServiceGrowth = () => {
-  // Lista de preguntas y respuestas
   const questions: Question[] = [
     {
       id: 1,
-      question: "Is HoLEP surgery painful?",
+      question: "¿Es dolorosa la cirugía HoLEP?",
       answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum veniam eveniet reiciendis fugit recusandae quisquam eius, nobis obcaecati quibusdam ipsam aspernatur laborum blanditiis, voluptas laboriosam harum doloribus a vel dolorum!"
     },
     {
       id: 2,
-      question: "How long does recovery take?",
+      question: "¿Cuánto tiempo lleva la recuperación?",
       answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum iusto asperiores, odio dolor dicta quos modi optio cum deserunt sequi adipisci, fugiat error nulla ducimus molestias eaque quae tempore nisi?"
     },
     {
       id: 3,
-      question: "What results can I expect?",
+      question: "¿Qué resultados puedo esperar?",
       answer: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam tenetur veritatis ipsum minima illum dolorum assumenda quisquam magnam et consectetur nemo, velit ab, eos pariatur vitae aperiam obcaecati perferendis voluptatem."
     }
   ];
 
-  // Estado para manejar qué pregunta está abierta
   const [openId, setOpenId] = useState<number | null>(null);
 
-  // Función para manejar el clic en una pregunta
   const handleClick = (id: number) => {
     setOpenId(openId === id ? null : id);
   };
@@ -71,46 +66,46 @@ const ServiceGrowth = () => {
   return (
     <div>
       <header>
-        <Navbar/>
+        <Navbar />
       </header>
       
       <div className="bg-white min-h-screen my-24">
         {/* Encabezado */}
         <header className="bg-brandPrimary text-white py-6">
           <div className="container mx-auto px-4">
-            <h1 className="text-4xl font-bold">Prostate Growth</h1>
-            <p className="text-lg mt-2">Advanced treatment for prostate enlargement.</p>
+            <h1 className="text-4xl font-bold">Crecimiento Prostático</h1>
+            <p className="text-lg mt-2">Tratamiento avanzado para el agrandamiento prostático.</p>
           </div>
         </header>
 
         {/* Sección de Introducción */}
         <section className="container mx-auto px-4 py-12 flex flex-col md:flex-row items-center md:items-start">
           <div className="md:w-2/3 mb-4 md:mb-0">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">What is HoLEP Surgery?</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">¿Qué es la cirugía HoLEP?</h2>
             <p className="text-lg text-gray-700">
-              HoLEP is the latest and most advanced minimally invasive treatment available to treat benign prostate enlargement (Prostatic Hyperplasia) and it is already performed in Puebla! HoLEP stands for Holmium Laser Enucleation of the Prostate. This is an avant-garde technique that offers multiple benefits to our patients, being a laser superior to those previously known for its cutting and coagulation capacity.
+              HoLEP es el tratamiento mínimamente invasivo más avanzado disponible para tratar el agrandamiento benigno de la próstata (Hiperplasia Prostática) y ya se realiza en Puebla. HoLEP significa Enucleación Prostática con Láser de Holmium. Esta es una técnica de vanguardia que ofrece múltiples beneficios a nuestros pacientes, siendo un láser superior a los anteriormente conocidos por su capacidad de corte y coagulación.
             </p>
           </div>
           <div className="md:w-1/3 flex justify-center md:justify-end">
-            <img src={holepImg} alt="HoLEP Surgery" className="w-full h-auto md:w-80 rounded-lg shadow-md" />
+            <img src={holepImg} alt="Cirugía HoLEP" className="w-full h-auto md:w-80 rounded-lg shadow-md" />
           </div>
         </section>
 
         {/* Sección de Beneficios */}
         <section className="py-12 bg-neutralSilver">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">HoLEP Surgery</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Cirugía HoLEP</h2>
             <ul className="list-disc list-inside text-lg text-gray-700 space-y-2">
-              <li>Prostate lesion</li>
-              <li>No bleeding</li>
-              <li>Ambulatory surgery (you go home the same day)</li>
+              <li>Lesión prostática</li>
+              <li>Sin sangrado</li>
+              <li>Cirugía ambulatoria (te vas a casa el mismo día)</li>
             </ul>
           </div>
         </section>
 
         {/* Sección de Procedimiento */}
         <section className="container mx-auto px-4 py-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">What is the procedure like?</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">¿Cómo es el procedimiento?</h2>
           <p className="text-lg text-gray-700 mb-6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore esse in reiciendis autem distinctio, provident reprehenderit deleniti aliquid? Voluptatum velit aliquid cum quis iste autem non asperiores eius ipsam.
           </p>
@@ -130,7 +125,7 @@ const ServiceGrowth = () => {
         {/* Sección de Testimonios */}
         <section className="bg-white py-12">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Patient Testimonials</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Testimonios de Pacientes</h2>
             <div className="space-y-8">
               <div className="bg-brandPrimary p-6 rounded-lg shadow-md">
                 <div className="flex mb-2">
@@ -139,10 +134,10 @@ const ServiceGrowth = () => {
                   ))}
                 </div>
                 <p className="text-lg text-white">
-                  "I recently met with Dr. Bruno Rubi, when he consulted at the Riberas hospital in Ajijic."
+                  "Recientemente conocí al Dr. Bruno Rubí cuando consultó en el hospital Riberas en Ajijic."
                 </p>
                 <p className="mt-4 text-right text-white">- Louis Solomon</p>
-                <p className="mt-4 text-right text-white">3 months ago</p>
+                <p className="mt-4 text-right text-white">hace 3 meses</p>
               </div>
 
               <div className="bg-brandPrimary p-6 rounded-lg shadow-md">
@@ -152,10 +147,10 @@ const ServiceGrowth = () => {
                   ))}
                 </div>
                 <p className="text-lg text-white">
-                  "He is an eminence, he explains absolutely everything in such a way that you understand perfectly both the condition and the treatment and he gives you possible solutions for the condition Excellent human being."
+                  "Es una eminencia, explica absolutamente todo de tal manera que entiendes perfectamente tanto la condición como el tratamiento. Excelente ser humano."
                 </p>
                 <p className="mt-4 text-right text-white">- Paola Gutiérrez</p>
-                <p className="mt-4 text-right text-white">8 months ago</p>
+                <p className="mt-4 text-right text-white">hace 8 meses</p>
               </div>
 
               <div className="bg-brandPrimary p-6 rounded-lg shadow-md">
@@ -165,10 +160,10 @@ const ServiceGrowth = () => {
                   ))}
                 </div>
                 <p className="text-lg text-white">
-                  "The doctor gave my dad the best service there can be, great doctor, explains everything very well. Very grateful to him and his staff."
+                  "El doctor le brindó a mi papá el mejor servicio posible. Gran doctor, explica todo muy bien. Muy agradecida con él y su personal."
                 </p>
-                <p className="mt-4 text-right text-white">- Dulce Hernandez</p>
-                <p className="mt-4 text-right text-white">8 months ago</p>
+                <p className="mt-4 text-right text-white">- Dulce Hernández</p>
+                <p className="mt-4 text-right text-white">hace 8 meses</p>
               </div>
             </div>
           </div>
@@ -176,7 +171,7 @@ const ServiceGrowth = () => {
 
         {/* Sección de Preguntas Frecuentes */}
         <section className="container mx-auto py-20 bg-white opacity-90 w-screen h-fit">
-          <h2 className="text-3xl font-bold text-black mb-8 px-6">Q&A</h2>
+          <h2 className="text-3xl font-bold text-black mb-8 px-6">Preguntas y Respuestas</h2>
           <div className="bg-white rounded-lg shadow-md">
             {questions.map((q) => (
               <AccordionItem
@@ -192,7 +187,7 @@ const ServiceGrowth = () => {
       </div>
 
       <footer>
-        <MyFooter/>
+        <MyFooter />
       </footer>
     </div>
   );

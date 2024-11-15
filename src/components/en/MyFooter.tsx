@@ -12,7 +12,7 @@ const MyFooter = () => {
           <a href="/" className='text-lg font-sans flex items-center space-x-3'>
             <img src="/logo.png" alt="logo" className=' w-14 inline-block items-center' />
             <span className='text-[#263238]'><a href="#home">Prostate Center</a></span>
-          </a>
+          </a> 
           </div>
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
             <div>

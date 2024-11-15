@@ -53,7 +53,7 @@ const Home = () => {
       to="contact"
       smooth={true}
       duration={500}
-      className="mt-6 px-6 py-3 btn-primary cursor-pointer"
+      className="mt-6 btn-primary transition transform hover:scale-105 w-full md:w-auto cursor-pointer"
     >
       Book Appointment
     </Link>
