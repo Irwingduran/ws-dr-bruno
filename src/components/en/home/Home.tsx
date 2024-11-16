@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
+import { useState, useEffect } from 'react';
 import videoBg from '../../../assets/video/video.mp4';
-import videoBgMobile from '../../../assets/video/video2.mp4'; 
+import videoBgMobile from '../../../assets/video/video2.mp4';
 import Navbar from '../Navbar';
 import Hero from './Hero';
 import Services from './Services';
@@ -18,21 +18,25 @@ import Parners from './Parners';
 import MedicalStats from './MedicalStats';
 
 const Home = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [currentVideo, setCurrentVideo] = useState(videoBg);
 
-  // Detecta si el dispositivo es móvil
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Ancho de referencia para móvil
+    // Listener para cambiar el video según el ancho de la pantalla
+    const updateVideo = () => {
+      if (window.innerWidth <= 768) {
+        setCurrentVideo(videoBgMobile); // Cambiar a video vertical
+      } else {
+        setCurrentVideo(videoBg); // Video original
+      }
     };
 
-    handleResize(); // Inicializa el estado al cargar el componente
-    window.addEventListener('resize', handleResize);
+    updateVideo(); // Inicializar al cargar
+    window.addEventListener('resize', updateVideo); // Escuchar cambios de tamaño
 
-    return () => window.removeEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', updateVideo); // Limpiar listener
+    };
   }, []);
-
-  const videoSrc = isMobile ? videoBgMobile : videoBg; // Selecciona el video según el dispositivo
 
   return (
     <div>
@@ -43,12 +47,12 @@ const Home = () => {
       <div className="relative w-full h-screen overflow-hidden" id="home">
         {/* Overlay para el fondo oscuro */}
         <div className="absolute inset-0 bg-black/40 z-10"></div>
-        
+
         {/* Contenedor del video con posicionamiento absoluto */}
         <div className="absolute inset-0">
           <video
             className="absolute top-1/2 left-1/2 min-w-full min-h-full object-cover -translate-x-1/2 -translate-y-1/2"
-            src={videoSrc} // Usa el video dinámico
+            src={currentVideo}
             autoPlay
             loop
             muted
@@ -65,17 +69,17 @@ const Home = () => {
             Expert in Prostate Surgery
           </p>
           <Link
-            to="contact"
-            smooth={true}
-            duration={500}
-            className="mt-6 btn-primary transition transform hover:scale-105 w-full md:w-auto cursor-pointer"
-          >
-            Book Appointment
-          </Link>
+  to="contact"
+  smooth={true}
+  duration={500}
+  className="mt-6 bg-brandPrimary text-white font-semibold py-2 px-6 rounded-lg shadow-md hover:bg-neutralDGrey hover:shadow-lg transition-all transform hover:scale-105 w-48 text-center"
+>
+  Book Appointment
+</Link>
+
         </div>
       </div>
 
-      {/* Resto del contenido */}
       <div>
         <Hero />
       </div>
