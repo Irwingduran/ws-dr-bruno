@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Blender1 from '../../../assets/icon/Logo.png';
-import Blender2 from '../../../assets/img/img1.jpg';
+import Blender2 from '../../../assets/img/forbes.png';
 import Blender3 from '../../../assets/img/FB-post.jpeg';
 import Blender4 from '../../../assets/img/screens.png';
 
@@ -18,7 +18,7 @@ const Hero = () => {
     {
       image: Blender1,
       title: 'Innovative and Effective Approach',
-      description: 'In HoLEP surgery for prostate treatment, he has been widely praised, reaching the milestone of 300 successful surgeries.',
+      description: 'In HoLEP surgery for prostate treatment, he has been widely praised, reaching the milestone of 500 successful surgeries.',
       cta: {
         label: 'Book appointment',
         action: () => handleScroll('contact'),
@@ -35,8 +35,8 @@ const Hero = () => {
     },
     {
       image: Blender3,
-      title: 'Robotic Surgeon Top Surgeon',
-      description: 'Da Vinci Company in Mexico offers situation to Dr. Bruno Rubi, expert in Robotic Surgery.',
+      title: 'The world-class company of the Da Vinci Robot “INTUITIVE”. ',
+      description: 'It recognizes the most outstanding surgeons nationwide, being Dr. Rubi the only Top Surgeon in the State of Puebla and one of the few in the country.',
       cta: {
         label: 'View Facebook post',
         link: 'https://www.facebook.com/share/p/vkAQS6ArYr8XvLpe/',
@@ -44,8 +44,8 @@ const Hero = () => {
     },
     {
       image: Blender4,
-      title: 'A patient shares their experience',
-      description: 'To traveling to Puebla for your operation with Toni Lucca',
+      title: 'U.S. native comes to Puebla for prostate surgery',
+      description: 'Highly recommends the service of the Prostate Center.',
       cta: {
         label: 'View video',
         action: () => handleScroll('video'),

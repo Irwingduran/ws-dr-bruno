@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const ServiceCard = ({ service }) => (
-  <Link 
+  <Link
     to={service.route}
     className="block transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
   >
@@ -17,9 +17,7 @@ const ServiceCard = ({ service }) => (
         <h3 className="text-2xl font-bold text-neutralDGrey mb-3">
           {service.title}
         </h3>
-        <p className="text-neutralDGrey">
-          {service.description}
-        </p>
+        <p className="text-neutralDGrey">{service.description}</p>
       </div>
     </div>
   </Link>
@@ -28,18 +26,11 @@ const ServiceCard = ({ service }) => (
 const Services = () => {
   const services = [
     {
-      id: 'cirugia-holep',
-      title: 'Prostatic Growth',
-      description: 'Benign Prostatic Hyperlapsia',
-      image: '/img/service2.jpg',
-      route: '/ServiceGrowth',
-    },
-    {
-      id: 'cancer-prostata',
-      title: 'Prostate Cancer',
-      description: 'Diagnosis & treatment of prostate cancer.',
-      image: '/img/service.png',
-      route: '/ServiceCancer',
+      id: "cirugia-holep",
+      title: "Prostate Enlargement",
+      description: "Benign Prostatic Hyperplasia (HBP)",
+      image: "/img/service.png",
+      route: "/ServiceGrowth",
     },
   ];
 
@@ -49,15 +40,21 @@ const Services = () => {
         {/* Título y descripción */}
         <div className="max-w-2xl mx-auto text-center mb-12">
           <h2 className="text-4xl font-bold text-neutralDGrey mb-4">
-            Our Services
+            Service
           </h2>
           <p className="text-lg text-neutralDGrey">
             Specialist in benign and malignant diseases of the prostate gland.
           </p>
         </div>
-        
+
         {/* Grid de servicios */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div
+          className={`grid ${
+            services.length === 1
+              ? "place-items-center"
+              : "md:grid-cols-2 gap-8"
+          } grid-cols-1 max-w-5xl mx-auto`}
+        >
           {services.map((service) => (
             <ServiceCard key={service.id} service={service} />
           ))}

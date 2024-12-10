@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Heart, Star, Stethoscope, SmilePlus, LucideIcon } from 'lucide-react';
+import { Heart, Star, Stethoscope, Highlighter , LucideIcon } from 'lucide-react';
 
 
 interface CardProps {
@@ -71,10 +71,10 @@ interface Stat {
 
 const MedicalStats: React.FC = () => {
   const stats: Stat[] = [
-    { icon: Stethoscope, value: 1080, label: "Surgeries" },
-    { icon: Heart, value: 650, label: "Consultations" },
-    { icon: Star, value: 80, label: "Patients helped" },
-    { icon: SmilePlus, value: 180, label: "Smiles" }
+    { icon: Stethoscope, value: 2500, label: "Surgeries" },
+    { icon: Heart, value: 11000, label: "Consultations" },
+    { icon: Star, value: 10850, label: "Patients helped" },
+    { icon: Highlighter , value: 502, label: "HoLEPS" }
   ];
 
   return (

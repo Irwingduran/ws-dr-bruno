@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import videoBg from '../../../assets/video/video.mp4';
 import videoBgMobile from '../../../assets/video/video2.mp4';
 import Navbar from '../Navbar';
+import Modal from './Modal';
+import imgModal from '../../../assets/img/DestinosPuebla.png'
 import Hero from './Hero';
 import Services from './Services';
 import Banner from './Banner';
@@ -18,8 +20,21 @@ import Parners from './Parners';
 import MedicalStats from './MedicalStats';
 
 const Home = () => {
-  const [currentVideo, setCurrentVideo] = useState(videoBg);
+  const [isModalOpen, setIsModalOpen] = useState(false); //modal
+  const [currentVideo, setCurrentVideo] = useState(videoBg); //bg-video
 
+  //modal
+  useEffect(() => {
+    // Open modal when the app loads
+    setIsModalOpen(true);
+  }, []);
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+
+//bg video
   useEffect(() => {
     // Listener para cambiar el video según el ancho de la pantalla
     const updateVideo = () => {
@@ -43,6 +58,17 @@ const Home = () => {
       <header>
         <Navbar />
       </header>
+      <div>
+      {/* Modal */}
+      <Modal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        title="Flights to Puebla, Mexico"
+        description="All the destinations available"
+        imageSrc={imgModal}
+      />
+    </div>
+
 
       <div className="relative w-full h-screen overflow-hidden" id="home">
         {/* Overlay para el fondo oscuro */}
