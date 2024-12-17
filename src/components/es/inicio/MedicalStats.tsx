@@ -18,7 +18,7 @@ interface StatCounterProps {
   duration?: number;
 }
 
-const StatCounter: React.FC<StatCounterProps> = ({ end, duration = 2000 }) => {
+const StatCounter: React.FC<StatCounterProps> = ({ end, duration = 8000 }) => {
   const [count, setCount] = useState<number>(0);
 
   useEffect(() => {

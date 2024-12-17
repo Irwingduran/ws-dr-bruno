@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import videoBg from '../../../assets/video/video.mp4';
 import videoBgMobile from '../../../assets/video/video2.mp4';
 import Navbar from '../Navbar';
+import WhatsAppButton from './WhatsAppButton';
 import Hero from './Hero';
 import Services from './Services';
 import Banner from './Banner';
@@ -44,6 +45,7 @@ const Inicio = () => {
       </header>
 
       <div className="relative w-full h-screen overflow-hidden" id="home">
+        <WhatsAppButton/>
         {/* Overlay para el fondo oscuro */}
         <div className="absolute inset-0 bg-black/40 z-10"></div>
 
