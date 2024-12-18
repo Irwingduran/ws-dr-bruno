@@ -76,59 +76,55 @@ const Hero = () => {
   };
 
   return (
-    <div className="bg-neutralSilver min-h-screen relative">
-      <div className="px-4 sm:px-6 lg:px-14 max-w-screen-2xl mx-auto flex items-center justify-center">
-        <div className="py-8 md:py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-6 md:gap-12 w-full">
-          {/* Contenedor de imagen con proporción dinámica */}
-          <div className="relative w-full md:w-1/2 overflow-hidden rounded-lg" style={{ paddingBottom: '56.25%' }}>
+    <div className="bg-neutralSilver h-auto relative">
+      <div className="px-4 sm:px-6 lg:px-14 mx-auto flex flex-col items-center gap-6 py-8 w-full">
+        {/* Imagen */}
+        <div className="relative w-full md:w-3/5 overflow-hidden rounded-lg">
           <img
-  src={slides[currentIndex].image}
-  alt={slides[currentIndex].title}
-  className="absolute inset-0 w-full h-full object-contain transition-opacity duration-1000 ease-in-out opacity-90 hover:opacity-100"
-/>
-          </div>
-
-          {/* Contenido de texto */}
-          <div className="w-full md:w-1/2 space-y-4 md:space-y-6">
-            <h1 className="text-2xl md:text-4xl font-semibold text-neutralDGrey leading-tight md:leading-snug">
-              {slides[currentIndex].title}
-            </h1>
-            <p className="text-sm md:text-base text-neutralGrey">
-              {slides[currentIndex].description}
-            </p>
-            <button
-              onClick={(e) => handleCtaClick(e, slides[currentIndex])}
-              className="btn-primary transition transform hover:scale-105 w-full md:w-auto"
-            >
-              {slides[currentIndex].cta.label}
-            </button>
-          </div>
+            src={slides[currentIndex].image}
+            alt={slides[currentIndex].title}
+            className="w-full h-auto object-contain"
+          />
         </div>
 
-        {/* Controles del carrusel */}
-        <div className="absolute bottom-20 left-0 right-0 flex justify-center space-x-4 px-4">
+        {/* Contenido de texto */}
+        <div className="text-center space-y-4 px-4">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-neutralDGrey leading-tight">
+            {slides[currentIndex].title}
+          </h1>
+          <p className="text-sm sm:text-base text-neutralGrey">
+            {slides[currentIndex].description}
+          </p>
           <button
-            className="bg-brandPrimary text-white py-2 px-4 rounded-full hover:bg-brandDark transition duration-300"
+            onClick={(e) => handleCtaClick(e, slides[currentIndex])}
+            className="bg-brandPrimary text-white py-3 px-6 rounded-lg hover:bg-brandDark transition-transform transform hover:scale-105"
+          >
+            {slides[currentIndex].cta.label}
+          </button>
+        </div>
+
+        {/* Controles */}
+        <div className="flex justify-center items-center gap-4">
+          <button
             onClick={handlePrevious}
-            aria-label="Previous slide"
+            className="bg-brandPrimary text-white rounded-full p-2 hover:bg-brandDark transition"
           >
             &#9664;
           </button>
           <button
-            className="bg-brandPrimary text-white py-2 px-4 rounded-full hover:bg-brandDark transition duration-300"
             onClick={handleNext}
-            aria-label="Next slide"
+            className="bg-brandPrimary text-white rounded-full p-2 hover:bg-brandDark transition"
           >
             &#9654;
           </button>
         </div>
 
         {/* Indicadores */}
-        <div className="absolute bottom-10 left-0 right-0 flex justify-center space-x-2">
+        <div className="flex justify-center space-x-2">
           {slides.map((_, index) => (
             <div
               key={index}
-              className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-colors duration-300 ${
+              className={`w-2 h-2 rounded-full transition-colors ${
                 index === currentIndex ? 'bg-brandPrimary' : 'bg-neutralGrey'
               }`}
             />
