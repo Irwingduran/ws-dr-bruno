@@ -30,7 +30,7 @@ const Services = () => {
       title: "Agrandamiento Prostático",
       description: "Hiperplasia Prostática Benigna (HPB)",
       image: "/img/service.png",
-      route: "/ServiceGrowth",
+      route: "/es/ServiceGrowth",
     },
   ];
 

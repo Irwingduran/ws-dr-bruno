@@ -42,19 +42,24 @@ const ServiceGrowth = () => {
   const questions: Question[] = [
     {
       id: 1,
-      question: "¿Es dolorosa la cirugía HoLEP?",
-      answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum veniam eveniet reiciendis fugit recusandae quisquam eius, nobis obcaecati quibusdam ipsam aspernatur laborum blanditiis, voluptas laboriosam harum doloribus a vel dolorum!"
+      question: "¿Qué es HoLEP y qué significa?",
+      answer: "HoLEP significa Enucleación Prostática con Láser de Holmium. Es un tratamiento mínimamente invasivo y avanzado para tratar el agrandamiento benigno de la próstata. Utiliza un láser de holmium que permite la extracción intacta del tejido prostático y facilita su análisis."
     },
     {
       id: 2,
-      question: "¿Cuánto tiempo lleva la recuperación?",
-      answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum iusto asperiores, odio dolor dicta quos modi optio cum deserunt sequi adipisci, fugiat error nulla ducimus molestias eaque quae tempore nisi?"
+      question: "¿Cuál es la diferencia entre el láser HoLEP y el láser verde?",
+      answer: "El láser HoLEP tiene una longitud de onda de 2200 nanómetros, lo que permite extraer el tejido prostático intacto para su análisis. En cambio, el láser verde, con una longitud de onda de 532 nanómetros, vaporiza o extrae el tejido en partes, lo que impide una biopsia completa."
     },
     {
       id: 3,
-      question: "¿Qué resultados puedo esperar?",
-      answer: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam tenetur veritatis ipsum minima illum dolorum assumenda quisquam magnam et consectetur nemo, velit ab, eos pariatur vitae aperiam obcaecati perferendis voluptatem."
-    }
+      question: "¿Cómo funciona el procedimiento HoLEP?",
+      answer: "Se inserta un endoscopio a través de la uretra hasta llegar a los lóbulos agrandados de la próstata. Luego, el láser de holmium corta y extrae el tejido obstructivo de forma intacta, permitiendo su análisis posterior."
+    },
+    {
+      id: 4,
+      question: "¿Dónde se puede realizar el procedimiento HoLEP?",
+      answer: "El procedimiento HoLEP se realiza en el Hospital MAC Puebla con el Dr. Bruno Rubi, un urólogo experto en esta técnica, capacitado por uno de los pioneros de HoLEP en México. Actualmente, es un referente y formador de esta técnica en Puebla."
+    },    
   ];
 
   const [openId, setOpenId] = useState<number | null>(null);

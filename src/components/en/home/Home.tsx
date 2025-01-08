@@ -115,6 +115,7 @@ const Home = () => {
         <MedicalStats />
       </div>
       <div>
+        
         <About />
       </div>
       <div>

@@ -45,19 +45,24 @@ const ServiceGrowth = () => {
   const questions: Question[] = [
     {
       id: 1,
-      question: "Is HoLEP surgery painful?",
-      answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum veniam eveniet reiciendis fugit recusandae quisquam eius, nobis obcaecati quibusdam ipsam aspernatur laborum blanditiis, voluptas laboriosam harum doloribus a vel dolorum!"
+      question: "What is HoLEP and what does it mean?",
+      answer: "HoLEP stands for Holmium Laser Enucleation of the Prostate. It is a minimally invasive and advanced treatment to treat benign prostate enlargement. It uses a holmium laser that allows the removal of intact prostate tissue and facilitates its analysis."
     },
     {
       id: 2,
-      question: "How long does recovery take?",
-      answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum iusto asperiores, odio dolor dicta quos modi optio cum deserunt sequi adipisci, fugiat error nulla ducimus molestias eaque quae tempore nisi?"
+      question: "What is the difference between the HoLEP laser and the green laser?",
+      answer: "The HoLEP laser has a wavelength of 2200 nanometers, which allows intact prostate tissue to be removed for analysis. In contrast, the green laser, with a wavelength of 532 nanometers, vaporizes or extracts the tissue in parts, which prevents a complete biopsy."
     },
     {
       id: 3,
-      question: "What results can I expect?",
-      answer: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam tenetur veritatis ipsum minima illum dolorum assumenda quisquam magnam et consectetur nemo, velit ab, eos pariatur vitae aperiam obcaecati perferendis voluptatem."
-    }
+      question: "How does the HoLEP procedure work?",
+      answer: "An endoscope is inserted through the urethra until it reaches the enlarged lobes of the prostate. The holmium laser then cuts and removes the obstructing tissue intact, allowing for further analysis."
+    },
+    {
+      id: 4,
+      question: "Where can the HoLEP procedure be performed?",
+      answer: "The HoLEP procedure is performed at Hospital MAC Puebla with Dr. Bruno Rubi, an expert urologist in this technique, trained by one of the pioneers of HoLEP in Mexico. Currently, he is a reference and trainer of this technique in Puebla."
+    },
   ];
 
   // Estado para manejar qué pregunta está abierta
