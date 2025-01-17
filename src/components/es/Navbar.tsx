@@ -43,7 +43,7 @@ const Navbar = () => {
 
   // Nav items array
   const navItems = [
-    { link: "Inicio", path: "/es/Inicio" },
+    { link: "Inicio", path: "inicio" },
     { link: "Servicios", path: "service" },
     { link: "Conóceme", path: "about" },
     { link: "Blog", path: "blog" },

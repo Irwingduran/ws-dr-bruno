@@ -30,7 +30,7 @@ const Hero = () => {
       description: 'Bruno Rubí López is considered a young prodigy surgeon, having completed more than 160 procedures with the use of this cutting-edge technology.',
       cta: {
         label: 'View article',
-        link: 'https://www.forbes.com',
+        link: 'https://forbes.com.mx/ad-holep-la-tecnica-quirurgica-mas-avanzada-contra-el-crecimiento-prostatico/',
       },
     },
     {

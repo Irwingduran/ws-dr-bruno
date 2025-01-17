@@ -18,15 +18,15 @@ const MyFooter = () => {
             <div>
               <Footer.Title title="Links" />
               <Footer.LinkGroup col>
-                <Footer.Link href="#service">Service</Footer.Link>
-                <Footer.Link href="#about">About</Footer.Link>
+                <Footer.Link href="/#service">Service</Footer.Link>
+                <Footer.Link href="/#about">About</Footer.Link>
 
               </Footer.LinkGroup>
             </div>
             <div>
               <Footer.Title title="Contact" />
               <Footer.LinkGroup col>
-              <Footer.Link href="#contact">Contact</Footer.Link>
+              <Footer.Link href="/#contact">Contact</Footer.Link>
               <Footer.Link href='mailto:centrodeprostata@gmail.com'>E-mail</Footer.Link>
                 
               </Footer.LinkGroup>
@@ -45,9 +45,9 @@ const MyFooter = () => {
           <Footer.Copyright href="https://delta-digital.com.mx" by="Imagen Médica™" year={2025} />
         </div>
         <div className="mt-4 right-16 flex space-x-6 sm:mt-0 sm:justify-center">
-            <Footer.Icon href="https://m.facebook.com/DrBrunoRubi/" icon={BsFacebook} />
-            <Footer.Icon href="https://www.instagram.com/urobruce" icon={BsInstagram} />
-            <Footer.Icon href="https://x.com/urobruce" icon={BsTwitter} />
+            <Footer.Icon href="https://m.facebook.com/DrBrunoRubi/" target="_blank" icon={BsFacebook} />
+            <Footer.Icon href="https://www.instagram.com/centro_de_prostata/" target="_blank" icon={BsInstagram} />
+            <Footer.Icon href="https://x.com/urobruce" target="_blank" icon={BsTwitter} />
 
           </div>
       </div>

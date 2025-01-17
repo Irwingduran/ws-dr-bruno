@@ -21,7 +21,7 @@ const Hero = () => {
       description: 'En la cirugía HoLEP para el tratamiento de la próstata, ha sido ampliamente elogiado, alcanzando el hito de 500 cirugías exitosas.',
       cta: {
         label: 'Agendar cita',
-        action: () => handleScroll('contact'),
+       link: "https://api.whatsapp.com/send/?phone=5212228457430&text=Hola+Dr.+encontr%C3%A9+su+perfil+en+findoctor+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0",
       },
     },
     {
@@ -30,7 +30,7 @@ const Hero = () => {
       description: 'Bruno Rubí López es considerado un joven cirujano prodigio, habiendo realizado más de 160 procedimientos con el uso de esta tecnología de vanguardia.',
       cta: {
         label: 'Ver artículo',
-        link: 'https://www.forbes.com',
+        link: 'https://forbes.com.mx/ad-holep-la-tecnica-quirurgica-mas-avanzada-contra-el-crecimiento-prostatico/',
       },
     },
     {

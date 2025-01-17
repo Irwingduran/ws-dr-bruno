@@ -56,7 +56,7 @@ const Inicio = () => {
         <Navbar />
       </header>
 
-      <div className="relative w-full h-screen overflow-hidden" id="home">
+      <div className="relative w-full h-screen overflow-hidden" id="inicio">
         {/* Overlay para el fondo oscuro */}
         <div className="absolute inset-0 bg-black/40 z-10"></div>
 
@@ -80,14 +80,13 @@ const Inicio = () => {
           <p className="text-xl md:text-2xl mt-4 text-center px-4">
           Experto en Cirugía de Próstata
           </p>
-          <Link
-  to="contact"
-  smooth={true}
-  duration={500}
+          <a
+  href="https://api.whatsapp.com/send/?phone=5212228457430&text=Hola+Dr.+encontr%C3%A9+su+perfil+en+findoctor+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0"
+  target="_blank"
   className="mt-6 bg-brandPrimary text-white font-semibold py-2 px-6 rounded-lg shadow-md hover:bg-neutralDGrey hover:shadow-lg transition-all transform hover:scale-105 w-48 text-center"
 >
   Agendar Cita
-</Link>
+</a>
 
         </div>
       </div>
