@@ -7,10 +7,10 @@ const MyFooter = () => {
       <div className="w-full">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>
-            <a href="/" className="text-lg font-sans flex items-center space-x-3">
+            <a href="/es/Inicio" className="text-lg font-sans flex items-center space-x-3">
               <img src="/logo.png" alt="logo" className="w-14 inline-block items-center" />
               <span className="text-[#263238]">
-                <a href="#home">Centro de Próstata</a>
+                <a href="/es/Inicio">Centro de Próstata</a>
               </span>
             </a>
           </div>
@@ -18,8 +18,8 @@ const MyFooter = () => {
             <div>
               <Footer.Title title="Enlaces" />
               <Footer.LinkGroup col>
-                <Footer.Link href="#service">Servicios</Footer.Link>
-                <Footer.Link href="#about">Acerca de</Footer.Link>
+                <Footer.Link href="/es/Inicio/#service">Servicios</Footer.Link>
+                <Footer.Link href="/es/Inicio/#about">Conóceme</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
