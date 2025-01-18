@@ -8,7 +8,7 @@ const Opinions = () => {
             See verified patient reviews on Google Business 
             </h2>
             <div className='flex items-center justify-center gap-8'>
-              <a href="https://www.google.com/maps/place/Dr.+Bruno+Rubí,+Cirujano+Urólogo/@19.0212342,-98.2347385,3271m/data=!3m1!1e3!4m8!3m7!1s0x8428aff80c0575ef:0xf3628b313ac0c63a!8m2!3d19.0212342!4d-98.2347385!9m1!1b1!16s%2Fg%2F11q8pwtrvz?entry=ttu&g_ep=EgoyMDI0MDkwMi4xIKXMDSoASAFQAw%3D%3D">
+              <a href="https://www.google.com/maps/place/Dr.+Bruno+Rubí,+Cirujano+Urólogo/@19.0212342,-98.2347385,3271m/data=!3m1!1e3!4m8!3m7!1s0x8428aff80c0575ef:0xf3628b313ac0c63a!8m2!3d19.0212342!4d-98.2347385!9m1!1b1!16s%2Fg%2F11q8pwtrvz?entry=ttu&g_ep=EgoyMDI0MDkwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank">
                 <button className='btn-primary text-white'>
                   View reviews
                   <svg xmlns='http://www.w3.org/2000/svg' width='14' height='8' viewBox='0 0 14 8' fill='none' className='inline-block ml-2'>
