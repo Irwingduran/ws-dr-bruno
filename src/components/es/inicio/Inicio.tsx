@@ -118,7 +118,7 @@ const Inicio = () => {
       <div>
         <Parners />
       </div>
-      <div>
+      <div id="contacto">
         <Footer />
       </div>
     </div>
