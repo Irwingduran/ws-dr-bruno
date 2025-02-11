@@ -9,19 +9,54 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    text: 'Recientemente conocí al Dr. Bruno Rubí cuando consultó en el hospital Riberas en Ajijic.',
-    name: 'Louis Solomon',
-    date: 'hace 3 meses',
+    text: 'Muy profesional, explica todo en detalle y es empático con las necesidades tanto del paciente como de su familia.',
+    name: 'Citlaly Cruz',
+    date: '21 de diciembre de 2024',
   },
   {
-    text: 'Es una eminencia, explica absolutamente todo de tal manera que entiendes perfectamente tanto la condición como el tratamiento, y te da posibles soluciones para la condición. Excelente ser humano.',
-    name: 'Paola Gutiérrez',
-    date: 'hace 8 meses',
+    text: 'Explicación excelente, estamos comenzando el tratamiento. Demuestra gran confianza y experiencia.',
+    name: 'Omar Salcedo',
+    date: '19 de diciembre de 2024',
   },
   {
-    text: 'El doctor le brindó a mi papá el mejor servicio que puede haber, gran doctor, explica todo muy bien. Muy agradecida con él y su personal.',
-    name: 'Dulce Hernández',
-    date: 'hace 8 meses',
+    text: 'La forma en que explicó todo fue extremadamente detallada, y la confianza que inspira es increíble.',
+    name: 'JIEC',
+    date: '18 de diciembre de 2024',
+  },
+  {
+    text: '¡El doctor fue muy atento y amable conmigo! Todo estuvo excelente. Muchas gracias.',
+    name: 'MFFI',
+    date: '18 de diciembre de 2024',
+  },
+  {
+    text: 'Un profesional muy honesto. Hoy en día, la mayoría de los médicos sugieren tratamientos innecesarios para cobrar más, pero este doctor me trató solo con lo necesario.',
+    name: 'Brandon Huesca',
+    date: '16 de diciembre de 2024',
+  },
+  {
+    text: 'Excelente atención, explicaciones muy claras y un consultorio limpio y bien diseñado.',
+    name: 'Ricardo Hernández Hernández',
+    date: '13 de diciembre de 2024',
+  },
+  {
+    text: 'Excelente doctor, experto en su campo y en los últimos avances tecnológicos.',
+    name: 'Carlos Estrada',
+    date: '9 de diciembre de 2024',
+  },
+  {
+    text: 'Desde el inicio de la consulta, el doctor actuó con profesionalismo y competencia. Me inspiró suficiente confianza y no tengo duda de que me sanará. Seguiré sus instrucciones. Estoy agradecido.',
+    name: 'Arturo Gutiérrez Orozco',
+    date: '5 de diciembre de 2024',
+  },
+  {
+    text: 'Excelente atención, respeto al paciente, muestra interés en brindar la mejor solución y cuenta con el conocimiento y la experiencia necesarios.',
+    name: 'JMV',
+    date: '3 de diciembre de 2024',
+  },
+  {
+    text: 'Explicó la situación en detalle, fue cordial y claramente conocedor en su campo. Lo recomiendo ampliamente.',
+    name: 'Edmundo Rojas',
+    date: '18 de noviembre de 2024',
   },
 ];
 

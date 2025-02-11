@@ -3,6 +3,7 @@ import Blender1 from '../../../assets/icon/Logo.png';
 import Blender2 from '../../../assets/img/forbes.png';
 import Blender3 from '../../../assets/img/FB-post.jpeg';
 import Blender4 from '../../../assets/img/screens.png';
+import Blender5 from "../../../assets/img/forbesBruno.png";
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -24,15 +25,15 @@ const Hero = () => {
        link: "https://api.whatsapp.com/send/?phone=5212228457430&text=Hola+Dr.+encontr%C3%A9+su+perfil+en+findoctor+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0",
       },
     },
-    {
-      image: Blender2,
-      title: 'Forbes: "Bruno Rubí López, prodigio de la cirugía urológica en HoLEP".',
-      description: 'Bruno Rubí López es considerado un joven cirujano prodigio, habiendo realizado más de 160 procedimientos con el uso de esta tecnología de vanguardia.',
-      cta: {
-        label: 'Ver artículo',
-        link: 'https://forbes.com.mx/ad-holep-la-tecnica-quirurgica-mas-avanzada-contra-el-crecimiento-prostatico/',
+   {
+        image: Blender5,
+        title: 'Forbes: "Bruno Rubí, transforma la cirugía de próstata en México',
+        description: 'Destaca por su experiencia e innovación tecnológica para ofrecer cirugías de clase mundial en el país.',
+        cta: {
+          label: 'View article',
+          link: 'https://forbes.com.mx/ad-bruno-rubi-christian-villeda-transforman-cirugia-de-prostata-en-mexico/',
+        },
       },
-    },
     {
       image: Blender3,
       title: 'La empresa de clase mundial del Robot Da Vinci “INTUITIVE”.',
@@ -40,6 +41,15 @@ const Hero = () => {
       cta: {
         label: 'Ver publicación de Facebook',
         link: 'https://www.facebook.com/share/p/vkAQS6ArYr8XvLpe/',
+      },
+    },
+    {
+      image: Blender2,
+      title: 'Forbes: "Bruno Rubí López, prodigio de la cirugía urológica en HoLEP".',
+      description: 'Bruno Rubí López es considerado un joven cirujano prodigio, habiendo realizado más de 160 procedimientos con el uso de esta tecnología de vanguardia.',
+      cta: {
+        label: 'Ver artículo',
+        link: 'https://forbes.com.mx/ad-holep-la-tecnica-quirurgica-mas-avanzada-contra-el-crecimiento-prostatico/',
       },
     },
     {

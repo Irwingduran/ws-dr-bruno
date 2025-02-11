@@ -3,6 +3,7 @@ import Blender1 from '../../../assets/icon/Logo.png';
 import Blender2 from '../../../assets/img/forbes.png';
 import Blender3 from '../../../assets/img/FB-post.jpeg';
 import Blender4 from '../../../assets/img/screens.png';
+import Blender5 from "../../../assets/img/forbesBruno.png";
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -25,12 +26,12 @@ const Hero = () => {
       },
     },
     {
-      image: Blender2,
-      title: 'Forbes: "Bruno Rubí López, urological surgeon prodigy at HoLEP".',
-      description: 'Bruno Rubí López is considered a young prodigy surgeon, having completed more than 160 procedures with the use of this cutting-edge technology.',
+      image: Blender5,
+      title: 'Forbes: "Bruno Rubí, transforma la cirugía de próstata en México',
+      description: 'Destaca por su experiencia e innovación tecnológica para ofrecer cirugías de clase mundial en el país.',
       cta: {
         label: 'View article',
-        link: 'https://forbes.com.mx/ad-holep-la-tecnica-quirurgica-mas-avanzada-contra-el-crecimiento-prostatico/',
+        link: 'https://forbes.com.mx/ad-bruno-rubi-christian-villeda-transforman-cirugia-de-prostata-en-mexico/',
       },
     },
     {
@@ -40,6 +41,15 @@ const Hero = () => {
       cta: {
         label: 'View Facebook post',
         link: 'https://www.facebook.com/share/p/vkAQS6ArYr8XvLpe/',
+      },
+    },
+    {
+      image: Blender2,
+      title: 'Forbes: "Bruno Rubí López, urological surgeon prodigy at HoLEP".',
+      description: 'Bruno Rubí López is considered a young prodigy surgeon, having completed more than 160 procedures with the use of this cutting-edge technology.',
+      cta: {
+        label: 'View article',
+        link: 'https://forbes.com.mx/ad-holep-la-tecnica-quirurgica-mas-avanzada-contra-el-crecimiento-prostatico/',
       },
     },
     {

@@ -9,21 +9,57 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    text: 'I recently met with Dr. Bruno Rubi, when he consulted at the Riberas hospital in Ajijic.',
-    name: 'Louis Solomon',
-    date: '3 months ago',
+    text: 'Very professional, explains everything in detail, and is empathetic towards the needs of both the patient and their family.',
+    name: 'Citlaly Cruz',
+    date: 'December 21, 2024',
   },
   {
-    text: 'He is an eminence, he explains absolutely everything in such a way that you understand perfectly both the condition and the treatment and he gives you possible solutions for the condition. Excellent human being.',
-    name: 'Paola Gutiérrez',
-    date: '8 months ago',
+    text: 'Excellent explanation, we are starting the treatment. He demonstrates great confidence and experience.',
+    name: 'Omar Salcedo',
+    date: 'December 19, 2024',
   },
   {
-    text: 'The doctor gave my dad the best service there can be, great doctor, explains everything very well. Very grateful to him and his staff.',
-    name: 'Dulce Hernandez',
-    date: '8 months ago',
+    text: 'The way he explained everything was extremely detailed, and the trust he inspires is incredible.',
+    name: 'JIEC',
+    date: 'December 18, 2024',
+  },
+  {
+    text: 'The doctor was very attentive and kind to me! Everything was great. Thank you very much.',
+    name: 'MFFI',
+    date: 'December 18, 2024',
+  },
+  {
+    text: 'A very honest professional. Nowadays, most doctors suggest unnecessary treatments to charge more, but this doctor treated me only with what was necessary.',
+    name: 'Brandon Huesca',
+    date: 'December 16, 2024',
+  },
+  {
+    text: 'Excellent attention, very clear explanations, and a clean, well-designed office.',
+    name: 'Ricardo Hernández Hernández',
+    date: 'December 13, 2024',
+  },
+  {
+    text: 'Excellent doctor, an expert in his field and the latest technological advancements.',
+    name: 'Carlos Estrada',
+    date: 'December 9, 2024',
+  },
+  {
+    text: 'From the beginning of the consultation, the doctor acted with professionalism and competence. He inspired enough confidence in me, and I have no doubt he will heal me. I will follow his instructions. I am grateful.',
+    name: 'Arturo Gutiérrez Orozco',
+    date: 'December 5, 2024',
+  },
+  {
+    text: 'Excellent attention, respect for the patient, shows interest in providing the best solution, and has the necessary knowledge and expertise.',
+    name: 'JMV',
+    date: 'December 3, 2024',
+  },
+  {
+    text: 'He explained the situation in detail, was cordial, and clearly knowledgeable in his field. I highly recommend him.',
+    name: 'Edmundo Rojas',
+    date: 'November 18, 2024',
   },
 ];
+
 
 const TestimonialCarousel: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
