@@ -15,7 +15,7 @@ const SocialMediaButtons = () => {
     },
     {
         name: 'Instagram',
-        url: 'https://www.instagram.com/centro_de_prostata/',
+        url: 'https://www.instagram.com/urobruce?igsh=c3J4b2lveDZnNTl3',
         bgColor: 'bg-pink-500',
         hoverColor: 'hover:bg-pink-600',
         icon: (

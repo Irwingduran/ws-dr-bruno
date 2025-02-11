@@ -46,7 +46,7 @@ const MyFooter = () => {
         </div>
         <div className="mt-4 right-16 flex space-x-6 sm:mt-0 sm:justify-center">
             <Footer.Icon href="https://m.facebook.com/DrBrunoRubi/" target="_blank" icon={BsFacebook} />
-            <Footer.Icon href="https://www.instagram.com/centro_de_prostata/" target="_blank" icon={BsInstagram} />
+            <Footer.Icon href="https://www.instagram.com/urobruce?igsh=c3J4b2lveDZnNTl3" target="_blank" icon={BsInstagram} />
             <Footer.Icon href="https://x.com/urobruce" target="_blank" icon={BsTwitter} />
 
           </div>

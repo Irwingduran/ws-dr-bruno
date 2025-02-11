@@ -18,6 +18,7 @@ import Form from './Form';
 import Footer from "../MyFooter";
 import Parners from './Parners';
 import MedicalStats from './MedicalStats';
+import Mockup from './Mockup';
 
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false); //modal
@@ -123,6 +124,7 @@ const Home = () => {
       </div>
       <div>
         <Address />
+        <Mockup/>
       </div>
       <div>
         <VideoComponent />

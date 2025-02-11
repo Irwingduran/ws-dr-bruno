@@ -15,6 +15,8 @@ import Opinions from './Opinions';
 import Footer from "../MyFooter";
 import Parners from './Parners';
 import MedicalStats from './MedicalStats';
+import Mockup from './Mockup';
+
 
 const Inicio = () => {
   const [isModalOpen, setIsModalOpen] = useState(false); //modal
@@ -107,6 +109,7 @@ const Inicio = () => {
       </div>
       <div>
         <Address />
+        <Mockup/>
       </div>
       <div>
         <VideoComponent />
