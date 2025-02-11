@@ -74,7 +74,7 @@ const MedicalStats: React.FC = () => {
     { icon: Stethoscope, value: 2500, label: "Surgeries" },
     { icon: Heart, value: 11000, label: "Consultations" },
     { icon: Star, value: 10850, label: "Patients helped" },
-    { icon: Highlighter , value: 502, label: "HoLEPS" }
+    { icon: Highlighter , value: 502, label: "Holeps" }
   ];
 
   return (
