@@ -29,9 +29,10 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
         <div className="w-full md:w-1/2 text-center md:text-left">
           <h2 className="text-3xl font-bold text-neutralDGrey">{title}</h2>
           <p className="text-gray-700 mt-4 p-5">{description}</p>
-          <button href="" className='btn-primary text-white'>
+          <a href="https://www.findoctor.com.mx/doctores/bruno-rubi-lopez" target="_blank"><button className='btn-primary text-white'>
           {buttonText}
                     </button>
+                    </a>
         </div>
       </div>
     </section>
@@ -42,11 +43,13 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
 const App = () => {
   return (
     <ServiceSection
-    imageUrl="/img/mockup.png"
-    title="Especialista en Cirugía Láser Prostática HoLEP"
-    description="El Dr. Bruno Rubí López es un cirujano urólogo especializado en la técnica HoLEP, un procedimiento mínimamente invasivo para el tratamiento de la hiperplasia prostática benigna. Con más de 300 cirugías exitosas, su experiencia y precisión garantizan una recuperación rápida y efectiva para sus pacientes."
-    buttonText="Agenda tu cita"
-  />
+  imageUrl="/img/mockup.png"
+  title="Encuentra más información en mi tarjeta digital en Findoctor"
+  description="Accede a mi tarjeta digital en Findoctor y obtén fácilmente información sobre mis servicios, ubicación, horarios y formas de contacto. Agenda tu cita en línea de manera rápida y segura."
+  buttonText="Ir a mi tarjeta digital"
+/>
+
+
   
   );
 };
