@@ -27,8 +27,8 @@ const Hero = () => {
     },
     {
       image: Blender5,
-      title: 'Forbes: "Bruno Rubí, transforma la cirugía de próstata en México',
-      description: 'Destaca por su experiencia e innovación tecnológica para ofrecer cirugías de clase mundial en el país.',
+      title: 'Forbes: "Bruno Rubí, transforms prostate surgery in Mexico',
+      description: 'It stands out for its experience and technological innovation to offer world-class surgeries in the country.',
       cta: {
         label: 'View article',
         link: 'https://forbes.com.mx/ad-bruno-rubi-christian-villeda-transforman-cirugia-de-prostata-en-mexico/',
