@@ -10,7 +10,7 @@ const Banner = () => {
           </h2>
           <div className='flex items-center justify-center gap-8'>
             <Link
-              to="contact"
+              to="https://api.whatsapp.com/send/?phone=5212228457430&text=Hola+Dr.+encontr%C3%A9+su+perfil+en+findoctor+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0"
               smooth={true}
               duration={500}
               className='btn-primary text-white cursor-pointer'
