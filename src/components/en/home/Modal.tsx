@@ -13,10 +13,10 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, description, imag
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
-      <div className="bg-white rounded-lg shadow-lg w-11/12 max-w-3xl p-6 relative">
+      <div className="bg-white rounded-lg shadow-lg w-11/12 max-w-3xl p-6 relative z-60">
         {/* Close Button */}
         <button
-          className="absolute top-3 right-3 text-gray-500 hover:text-gray-700 z-30 focus:outline-none"
+          className="absolute top-3 right-3 text-gray-500 hover:text-gray-700 z-70 focus:outline-none"
           onClick={onClose}
         >
           <span className="sr-only">Close</span>
