@@ -1,7 +1,7 @@
 
 const Opinions = () => {
   return (
-    <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto py-16 bg-colorDark'>
+    <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto py-16 bg-colorDark'  id='reviews'>
         <div className='flex items-center justify-center lg:w-2/3 mx-auto'>
           <div className='text-center'>
             <h2 className='text-2xl font-bold mb-4 text-neutralDGrey'>

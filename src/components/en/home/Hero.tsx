@@ -86,70 +86,72 @@ const Hero = () => {
   };
 
   return (
-    <div className="bg-neutralSilver h-fitrelative">
-  <div className="px-4 sm:px-6 lg:px-14 max-w-screen-2xl mx-auto flex items-center justify-center relative">
-    
-    {/* Botón Anterior - Fuera del contenedor */}
-    <button
-      className="absolute left-3 top-1/2 transform -translate-y-1/2 bg-brandPrimary text-white opacity-80 py-2 px-4 rounded-full hover:bg-brandDark transition duration-300 z-10"
-      onClick={handlePrevious}
-      aria-label="Previous slide"
-    >
-      &#9664;
-    </button>
-    
-    <div className="py-8 md:py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-6 md:gap-12 w-full">
-      
-      {/* Contenedor de imagen con proporción dinámica */}
-      <div className="relative w-full md:w-1/2 overflow-hidden rounded-lg" style={{ paddingBottom: '56.25%' }}>
-        <img
-          src={slides[currentIndex].image}
-          alt={slides[currentIndex].title}
-          className="absolute inset-0 w-full h-full object-contain transition-opacity duration-1000 ease-in-out opacity-90 hover:opacity-100"
-        />
-      </div>
-
-      {/* Contenido de texto */}
-      <div className="w-full md:w-1/2 space-y-4 md:space-y-6">
-        <h1 className="text-2xl md:text-4xl font-semibold text-neutralDGrey leading-tight md:leading-snug">
-          {slides[currentIndex].title}
-        </h1>
-        <p className="text-sm md:text-base text-neutralGrey">
-          {slides[currentIndex].description}
-        </p>
+    <div className="bg-neutralSilver h-fit relative">
+      <div className="px-4 sm:px-6 lg:px-14 max-w-screen-2xl mx-auto flex items-center justify-center relative">
+        
+        {/* Botón Anterior - Fuera del contenedor */}
         <button
-          onClick={(e) => handleCtaClick(e, slides[currentIndex])}
-          className="btn-primary transition transform hover:scale-105 w-full md:w-auto"
+          className="absolute left-3 top-1/2 transform -translate-y-1/2 bg-brandPrimary text-white opacity-80 py-2 px-4 rounded-full hover:bg-brandDark transition duration-300 z-10"
+          onClick={handlePrevious}
+          aria-label="Previous slide"
         >
-          {slides[currentIndex].cta.label}
+          &#9664;
         </button>
+        
+        <div className="py-8 md:py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-6 md:gap-12 w-full">
+          
+          {/* Contenedor de imagen con proporción dinámica */}
+          <button
+            onClick={(e) => handleCtaClick(e, slides[currentIndex])}
+            className="relative w-full md:w-1/2 overflow-hidden rounded-lg"
+            style={{ paddingBottom: '56.25%', background: 'none', border: 'none', cursor: 'pointer' }}
+          >
+            <img
+              src={slides[currentIndex].image}
+              alt={slides[currentIndex].title}
+              className="absolute inset-0 w-full h-full object-contain transition-opacity duration-1000 ease-in-out opacity-90 hover:opacity-100"
+            />
+          </button>
+
+          {/* Contenido de texto */}
+          <div className="w-full md:w-1/2 space-y-4 md:space-y-6">
+            <h1 className="text-2xl md:text-4xl font-semibold text-neutralDGrey leading-tight md:leading-snug">
+              {slides[currentIndex].title}
+            </h1>
+            <p className="text-sm md:text-base text-neutralGrey">
+              {slides[currentIndex].description}
+            </p>
+            <button
+              onClick={(e) => handleCtaClick(e, slides[currentIndex])}
+              className="btn-primary transition transform hover:scale-105 w-full md:w-auto"
+            >
+              {slides[currentIndex].cta.label}
+            </button>
+          </div>
+        </div>
+        
+        {/* Botón Siguiente - Fuera del contenedor */}
+        <button
+          className="absolute right-3 top-1/2 transform -translate-y-1/2 bg-brandPrimary opacity-80 text-white py-2 px-4 rounded-full hover:bg-brandDark transition duration-300 z-10"
+          onClick={handleNext}
+          aria-label="Next slide"
+        >
+          &#9654;
+        </button>
+
+        {/* Indicadores */}
+        <div className="absolute bottom-10 left-0 right-0 flex justify-center space-x-2">
+          {slides.map((_, index) => (
+            <div
+              key={index}
+              className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-colors duration-300 ${
+                index === currentIndex ? 'bg-brandPrimary' : 'bg-neutralGrey'
+              }`}
+            />
+          ))}
+        </div>
       </div>
     </div>
-    
-    {/* Botón Siguiente - Fuera del contenedor */}
-    <button
-      className="absolute right-3 top-1/2 transform -translate-y-1/2 bg-brandPrimary opacity-80 text-white py-2 px-4 rounded-full hover:bg-brandDark transition duration-300 z-10"
-      onClick={handleNext}
-      aria-label="Next slide"
-    >
-      &#9654;
-    </button>
-
-    {/* Indicadores */}
-    <div className="absolute bottom-10 left-0 right-0 flex justify-center space-x-2">
-      {slides.map((_, index) => (
-        <div
-          key={index}
-          className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-colors duration-300 ${
-            index === currentIndex ? 'bg-brandPrimary' : 'bg-neutralGrey'
-          }`}
-        />
-      ))}
-    </div>
-  </div>
-</div>
-
-
   );
 };
 

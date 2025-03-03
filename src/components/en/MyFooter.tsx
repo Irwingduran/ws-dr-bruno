@@ -42,7 +42,7 @@ const MyFooter = () => {
         </div>
         <Footer.Divider />
         <div className="w-full sm:flex sm:items-center sm:justify-between">
-          <Footer.Copyright href="https://delta-digital.com.mx" by="Imagen Médica™" year={2025} />
+          <Footer.Copyright href="https://marketingmedicos.com.mx/" by="Delta by Imagen Médica™" year={2025} />
         </div>
         <div className="mt-4 right-16 flex space-x-6 sm:mt-0 sm:justify-center">
             <Footer.Icon href="https://m.facebook.com/DrBrunoRubi/" target="_blank" icon={BsFacebook} />

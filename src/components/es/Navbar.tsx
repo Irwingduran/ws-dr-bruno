@@ -47,7 +47,7 @@ const Navbar = () => {
     { link: "Inicio", path: "inicio" },
     { link: "Servicios", path: "service" },
     { link: "Conóceme", path: "about" },
-    { link: "Blog", path: "blog" },
+    { link: "Reseñas", path: "resenas" },
     { link: "Contacto", path: "contacto" },
   ];
 
