@@ -1,27 +1,93 @@
 <!doctype html>
-<html lang="en">
+<html lang="es-MX" dir="ltr">
 
 <head>
+  <!-- Metadatos básicos -->
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <!-- Información del sitio -->
+  <title>Centro de Próstata | Dr. Bruno Rubí López - Especialista en Urología</title>
+  <meta name="description" content="Clínica especializada en tratamientos de próstata y cirugía HOLEP. El Dr. Bruno Rubí López es urólogo certificado con amplia experiencia en México." />
+  <meta name="keywords" content="urólogo, cáncer de próstata, cirugía HOLEP, tratamiento prostático, médico urólogo, especialista en próstata, Centro de Urología" />
+  <meta name="author" content="Dr. Bruno Rubí López" />
+  <meta name="copyright" content="Centro de Próstata" />
+  
+  <!-- Favicon y touch icons -->
   <link rel="icon" type="image/svg+xml" href="/logo.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Centro de Próstata</title>
+  <link rel="apple-touch-icon" href="/logo.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  <!-- Open Graph / Facebook 
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://centrodeprostata.com/" />
+  <meta property="og:title" content="Centro de Próstata | Dr. Bruno Rubí López" />
+  <meta property="og:description" content="Especialistas en tratamientos de próstata y cirugía HOLEP en México" />
+  <meta property="og:image" content="https://centrodeprostata.com" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="es_MX" />
+  -->
+  
+  <!-- Twitter
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@centroprostata" />
+  <meta name="twitter:creator" content="@urobruce" />
+  <meta name="twitter:title" content="Centro de Próstata | Dr. Bruno Rubí López" />
+  <meta name="twitter:description" content="Especialistas en tratamientos de próstata y cirugía HOLEP en México" />
+  <meta name="twitter:image" content="https://centrodeprostata.com/images/twitter-card.jpg" />
+   -->
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://centrodeprostata.com/" />
+  
+  <!-- Preconexiones y precargas -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" />
+  
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  new Date().getTime(),event:'gtm.js'});var f=d.get.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-N6TG52R4');</script>
   <!-- End Google Tag Manager -->
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#0066cc" />
+  
+  <!-- Apple Safari -->
+  <meta name="apple-mobile-web-app-title" content="Centro Próstata" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  
+  <!-- Microsoft -->
+  <meta name="msapplication-TileColor" content="#0066cc" />
+  <meta name="msapplication-config" content="/browserconfig.xml" />
+  
+  <!-- Robots -->
+  <meta name="robots" content="index, follow, max-image-preview:large" />
 </head>
 
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6TG52R4"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+  
+  <div id="root"></div>
+  
+  <!-- Scripts -->
+  <script type="module" src="/src/main.jsx"></script>
+  
+  <!-- Carga diferida de fuentes -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" />
+  </noscript>
+  
 </body>
 
 </html>
