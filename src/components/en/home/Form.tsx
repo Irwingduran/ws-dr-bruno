@@ -98,7 +98,7 @@ const Form = () => {
           <label className="block text-neutralDGrey">First Name *</label>
           <input 
             type="text" 
-            name="e" 
+            name="firstName" 
             value={formData.firstName} 
             onChange={handleChange} 
             className="w-full px-4 py-2 border rounded-md"
