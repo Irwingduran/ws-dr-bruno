@@ -9,6 +9,7 @@ import icon5 from '../../../assets/icon/siu.gif';
 import icon6 from '../../../assets/icon/eau.png';
 import icon7 from '../../../assets/icon/cau.png';
 
+
 const About = () => {
   const [showModal, setShowModal] = useState(false);
 
@@ -17,7 +18,7 @@ const About = () => {
 
   const modalContent = (
     <div>
-      <h2 className="text-2xl font-bold mb-4">About</h2>
+      <h2 className="text-2xl font-bold mb-4">About</h2> 
       <p>
         In the field of modern urology, few names resonate as strongly as that of Dr. Bruno, founder of the Prostate and Urinary Tract Center in Puebla, Mexico. 
         Recognized for his expertise and skill in prostate laser surgery on an international level. 
