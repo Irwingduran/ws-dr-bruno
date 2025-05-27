@@ -19,6 +19,7 @@ import Footer from "../MyFooter";
 import Parners from './Parners';
 import MedicalStats from './MedicalStats';
 import Mockup from './Mockup';
+import SocialMediaButtons from '../../../components/SocialMediaButtons';
 
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false); //modal
@@ -59,6 +60,7 @@ const Home = () => {
       <header>
         <Navbar />
       </header>
+      <SocialMediaButtons/>
       <div>
       {/* Modal */}
       <Modal

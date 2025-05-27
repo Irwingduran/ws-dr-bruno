@@ -1,4 +1,3 @@
-import { Link } from 'react-scroll';
 import { useState, useEffect } from 'react';
 import videoBg from '../../../assets/video/video.mp4';
 import videoBgMobile from '../../../assets/video/video2.mp4';
@@ -16,6 +15,7 @@ import Footer from "../MyFooter";
 import Parners from './Parners';
 import MedicalStats from './MedicalStats';
 import Mockup from './Mockup';
+import SocialMediaButtons from './SocialMediaButtons';
 
 
 const Inicio = () => {
@@ -57,6 +57,7 @@ const Inicio = () => {
       <header>
         <Navbar />
       </header>
+      <SocialMediaButtons/>
 
       <div className="relative w-full h-screen overflow-hidden" id="inicio">
         {/* Overlay para el fondo oscuro */}
